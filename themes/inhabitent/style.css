@@ -1,7 +1,7 @@
 /*!
-Theme Name: Inhabitent Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: RED Academy / Breckon Trischuk
+Author: RED Academy
 Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
@@ -234,7 +234,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: Merriweather, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
