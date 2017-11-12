@@ -25,18 +25,27 @@ a {
 }
 
 /* Menus */
-
+// #menu-item-69 {
+// 	color:blue;
+// }
 .main-navigation {
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	background-color: transparent;
+  border-bottom: 0;
+  position: absolute;
+  text-shadow: 1px 1px 2px #323232;
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		justify-content: space-between;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -54,12 +63,13 @@ a {
 			li {
 				&:hover > ul,
 				&.focus > ul {
-					left: 100%;
+					left: 100%;					
 				}
 			}
 
 			a {
 				width: 200px;
+				padding-left: 1.5rem;
 			}
 
 			:hover > a,
@@ -79,6 +89,7 @@ a {
 	li {
 		float: left;
 		position: relative;
+		
 
 		&:hover > a,
 		&.focus > a {
@@ -98,7 +109,7 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: block;	
 }
 
 @media screen and (min-width: 768px) {

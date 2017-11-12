@@ -61,7 +61,9 @@ dd {
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	width: 100%; /* Adhere to container width. */
+	height: 100vh;
+	// position: absolute;
 }
 
 table {

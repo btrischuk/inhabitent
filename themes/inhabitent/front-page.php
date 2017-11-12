@@ -19,9 +19,28 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-      <i class="fa fa-thermometer-empty" aria-hidden="true"></i>
-
+      <?php while ( have_posts() ) : the_post(); ?>
+      
+    body{
+    background-image: url("paper.gif");
+    }<!-- <i class="fa fa-thermometer-empty" aria-hidden="true"></i> -->
+      <!-- <body>
+      background-image: url("paper.gif")
+      
+      -ms-flex-align: center;
+    align-items: center;
+    background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url(../../images/home-hero.jpg) no-repeat top;
+    background-size: cover,cover;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100vh; -->
 				<?php get_template_part( 'template-parts/content' ); ?>
 
 			<?php endwhile; ?>

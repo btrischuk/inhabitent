@@ -122,3 +122,4 @@ function red_starter_scripts() {
 function scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 }
+add_theme_support( 'custom-logo' );
