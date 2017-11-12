@@ -20,10 +20,10 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
       <?php while ( have_posts() ) : the_post(); ?>
-      
-    body{
-    background-image: url("paper.gif");
-    }<!-- <i class="fa fa-thermometer-empty" aria-hidden="true"></i> -->
+    
+    <!-- body { -->
+    <!-- background-image: url("inhabitent-logo-full.svg"); -->
+    <!-- }<i class="fa fa-thermometer-empty" aria-hidden="true"></i> -->
       <!-- <body>
       background-image: url("paper.gif")
       

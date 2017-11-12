@@ -681,3 +681,69 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.main-navigation a {
+  color: white; }
+
+.hero {
+  background: url(../../images/home-hero.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh; }
+
+.logo {
+  background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
+  background-size: 50px 33px;
+  height: 100px;
+  width: 100px; }
+
+.logo-container {
+  position: 0px; }
+
+footer {
+  background: url(../../images/dark-wood@2x.png) center no-repeat;
+  background-size: 100%; }
+
+footer h2 {
+  text-transform: uppercase;
+  color: #d99054; }
+
+.footer-block-container {
+  height: 280px;
+  min-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.footer-block-item {
+  display: inline-block;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: inline-block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 280px;
+  width: 25%; }
+
+.footer-block-item:last-child {
+  width: 50%;
+  background: url(../../images/logos/inhabitent-logo-text-dark.svg) center no-repeat; }
+
+.site-info {
+  height: 30px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.site-info p {
+  text-align: center;
+  text-transform: uppercase; }
