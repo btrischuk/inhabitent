@@ -87,9 +87,11 @@ footer p {
   font-weight: bold;
 }
 
-.footer-block-item:last-child img{
-  height: 50px;
-  width: 280;
+.footer-block-item:last-child {
+  // height: 50px;
+  width: 50%;
+  // height:100%;
+  // width:100%;
   background:
   url(../../images/logos/inhabitent-logo-text.svg)center no-repeat; 
 }

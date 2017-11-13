@@ -748,9 +748,8 @@ footer p {
 .footer-block-item p span {
   font-weight: bold; }
 
-.footer-block-item:last-child img {
-  height: 50px;
-  width: 280;
+.footer-block-item:last-child {
+  width: 50%;
   background: url(../../images/logos/inhabitent-logo-text.svg) center no-repeat; }
 
 .site-info {
