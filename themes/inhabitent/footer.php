@@ -33,6 +33,8 @@
 					</div>
 
 					<div class="footer-block-item">
+						<div class="footer-logo">
+						</div>
 					</div>
 				</div>
 

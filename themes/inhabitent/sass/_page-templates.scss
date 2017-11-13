@@ -13,7 +13,8 @@
 //  }
 
 .main-navigation {
-  background-color: hsla(0,0%,100%,.85);  
+  background-color: $color__background-header;  
+  border-bottom: $color__border;
 }
 
 .main-navigation a {
@@ -21,7 +22,7 @@
   padding: 1rem;
 }
 
-.hero{
+.site-main-front-page {
   background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696
   url(../../images/home-hero.jpg);
   background-size: cover;
@@ -45,6 +46,17 @@
   position: 0px;
 }
 
+
+//widget 
+.widget-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.textwidget span {
+  font-weight: bold;
+}
 
 
 //footer
@@ -92,14 +104,18 @@ footer p {
   width: 50%;
   // height:100%;
   // width:100%;
+}
+
+.footer-logo {
+  height: 100px;
   background:
   url(../../images/logos/inhabitent-logo-text.svg)center no-repeat; 
 }
 
-// .footer-block-container:nth-child(1){
-//   display: flex;
-//   flex-direction: column;
-// }
+.social-links a {
+  padding-left: 10px;
+  font-size: 1.3rem;
+}
 
 .site-info {
   height: 30px;
@@ -110,22 +126,3 @@ footer p {
   text-align: center;
   text-transform: uppercase;
 }
-
-// .footer-block-item:nth-last-child(3) {
-//   background: red;
-//   height: 280px;
-//   width: 90%;
-//   margin: 0, auto;
-//   flex-direction:row;
-  // background-image:
-  // linear-gradient(
-  //   rgba(0,0,0, 0.3),
-  //   rgba(0,0,0,0.3)),
-  //   url(images/logos/inhabitent-logo-text-dark.svg) center no-repeat,
-    
-
-// }
-
-// .footer-block:nth-child(2) {
-//   background-color: purple;
-// }

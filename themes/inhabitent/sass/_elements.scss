@@ -61,10 +61,14 @@ dd {
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */
-	width: 100%; /* Adhere to container width. */
-	height: 100vh;
+	width: 60%; /* Adhere to container width. */
+	height: 50vh;
 	// position: absolute;
 }
+
+// img:nth-child(1){
+// 	padding-top: 30px;
+// }
 
 table {
 	margin: 0 0 $base__space-unit;
