@@ -29,6 +29,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="logo-container">
 						<div class="logo">
+						<i class="fa fa-search" aria-hidden="true"></i>
 						</div>
 					</div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>

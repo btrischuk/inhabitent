@@ -439,9 +439,9 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: transparent;
+  background-color: blue;
   border-bottom: 0;
-  position: absolute;
+  position: fixed;
   text-shadow: 1px 1px 2px #323232; }
   .main-navigation ul {
     display: none;
@@ -681,11 +681,16 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.main-navigation {
+  background-color: rgba(255, 255, 255, 0.85); }
+
 .main-navigation a {
-  color: white; }
+  color: white;
+  padding: 1rem; }
 
 .hero {
-  background: url(../../images/home-hero.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url(../../images/home-hero.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../images/home-hero.jpg);
   background-size: cover;
   width: 100vw;
   height: 100vh; }
@@ -694,7 +699,10 @@ object {
   background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
   background-size: 50px 33px;
   height: 100px;
-  width: 100px; }
+  width: 100px;
+  position: absolute;
+  left: 10px;
+  top: 10px; }
 
 .logo-container {
   position: 0px; }
@@ -721,22 +729,29 @@ footer h2 {
       flex-wrap: nowrap; }
 
 .footer-block-item {
-  display: inline-block;
   background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: inline-block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   height: 280px;
-  width: 25%; }
+  width: 25%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
-.footer-block-item:last-child {
-  width: 50%;
-  background: url(../../images/logos/inhabitent-logo-text-dark.svg) center no-repeat; }
+footer p {
+  color: #fff; }
+
+.footer-block-item p span {
+  font-weight: bold; }
+
+.footer-block-item:last-child img {
+  height: 50px;
+  width: 280;
+  background: url(../../images/logos/inhabitent-logo-text.svg) center no-repeat; }
 
 .site-info {
   height: 30px;

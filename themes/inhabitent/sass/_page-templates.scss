@@ -12,13 +12,17 @@
 //   padding-top: 20px;
 //  }
 
+.main-navigation {
+  background-color: hsla(0,0%,100%,.85);  
+}
+
 .main-navigation a {
   color:white; 
-
+  padding: 1rem;
 }
 
 .hero{
-  background:
+  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696
   url(../../images/home-hero.jpg);
   background-size: cover;
   width: 100vw;
@@ -32,6 +36,9 @@
   background-size: 50px 33px;
   height: 100px;
   width: 100px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 
 .logo-container {
@@ -62,20 +69,29 @@ footer h2 {
 }
 
 .footer-block-item {
-  display: inline-block;
+  // display: inline-block;
   background-color: transparent;
   display: flex;
-  display: inline-block;
+  // display: inline-block;
   flex-direction:column;
   height:280px;
   width: 25%;
-  
+  flex-wrap: wrap;
 }
 
-.footer-block-item:last-child{
-  width: 50%;
+footer p {
+  color: $color__background-body;
+}
+
+.footer-block-item p span {
+  font-weight: bold;
+}
+
+.footer-block-item:last-child img{
+  height: 50px;
+  width: 280;
   background:
-  url(../../images/logos/inhabitent-logo-text-dark.svg)center no-repeat; 
+  url(../../images/logos/inhabitent-logo-text.svg)center no-repeat; 
 }
 
 // .footer-block-container:nth-child(1){
