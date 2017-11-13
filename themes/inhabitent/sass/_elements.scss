@@ -61,9 +61,13 @@ dd {
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */
-	width: 60%; /* Adhere to container width. */
-	height: 50vh;
+	width: 100%; /* Adhere to container width. */
 	// position: absolute;
+}
+
+.content-area {
+	width: 90%;
+	padding-right: 40px;
 }
 
 // img:nth-child(1){

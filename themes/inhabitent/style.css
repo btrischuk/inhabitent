@@ -337,9 +337,12 @@ dd {
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
-  width: 60%;
-  /* Adhere to container width. */
-  height: 50vh; }
+  width: 100%;
+  /* Adhere to container width. */ }
+
+.content-area {
+  width: 90%;
+  padding-right: 40px; }
 
 table {
   margin: 0 0 1.5rem;
@@ -708,6 +711,12 @@ object {
 .logo-container {
   position: 0px; }
 
+.site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px; }
+
 .widget-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -718,7 +727,12 @@ object {
           flex-direction: column;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end; }
+          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  border: 1px solid #e1e1e1; }
 
 .textwidget span {
   font-weight: bold; }
