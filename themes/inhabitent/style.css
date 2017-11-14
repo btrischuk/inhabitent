@@ -686,7 +686,8 @@ object {
 /* Front page */
 .main-navigation {
   background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #e1e1e1; }
+  border-bottom: 1px solid #e1e1e1;
+  z-index: 3; }
 
 .main-navigation a {
   color: white;
@@ -715,7 +716,11 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 40px; }
+  padding-top: 40px;
+  position: relative; }
+
+.entry-title {
+  position: absolute; }
 
 .widget-area {
   display: -webkit-box;
@@ -732,7 +737,10 @@ object {
       -ms-flex-align: center;
           align-items: center;
   width: 40%;
-  border: 1px solid #e1e1e1; }
+  border-left: 1px solid #e1e1e1; }
+
+.widget-area p, a, li {
+  color: green; }
 
 .textwidget span {
   font-weight: bold; }

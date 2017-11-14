@@ -15,6 +15,7 @@
 .main-navigation {
   background-color: $color__background-header;  
   border-bottom: $color__border;
+  z-index: 3;
 }
 
 .main-navigation a {
@@ -51,8 +52,12 @@
 .site-content {
   display: flex;
   padding-top: 40px;
+  position: relative;
 }
 
+.entry-title {
+  position: absolute;
+}
 
 //widget 
 .widget-area {
@@ -61,7 +66,11 @@
   align-items: flex-end;
   align-items: center;
   width: 40%;
-  border: $color__border;
+  border-left: $color__border;
+}
+
+.widget-area p, a, li{
+  color: green;
 }
 
 .textwidget span {

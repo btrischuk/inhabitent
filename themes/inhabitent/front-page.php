@@ -16,11 +16,17 @@ get_header(); ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
-			<?php endif; ?>
+      <?php endif; ?>
+
+    
+      
+
 
 			<?php /* Start the Loop */ ?>
       <?php while ( have_posts() ) : the_post(); ?>
-    
+      <!-- <section class"center-logo">
+        <img src="../../images/logos/inhabitent-logo-full.svg" alt="inhabitent logo">
+      </section> -->
     <!-- body { -->
     <!-- background-image: url("inhabitent-logo-full.svg"); -->
     <!-- }<i class="fa fa-thermometer-empty" aria-hidden="true"></i> -->
@@ -56,5 +62,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
