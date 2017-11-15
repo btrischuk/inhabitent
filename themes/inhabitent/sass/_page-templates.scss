@@ -71,11 +71,20 @@
 //   }
 // }
 
+.front-center-logo-wrapper{
+display: flex;
+justify-content: center;
+}
 
 .site-content {
   display: flex;
   padding-top: 40px;
   // position: relative;
+}
+
+.front-center-logo {
+  width: 275px;
+  height: 275px;
 }
 
 .entry-title-about {
@@ -127,6 +136,18 @@
   position: absolute;
   background-color: $color__brand-green;
   color: $color__background-body;
+}
+
+// journal front page
+.journal-posts  {
+  display: flex;
+  color: white;
+
+}
+
+.front-journal-posts  {
+  border: 1px solid blue;
+  margin: 20px;
 }
 
 //widget 

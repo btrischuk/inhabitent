@@ -712,11 +712,23 @@ object {
 .logo-container {
   position: 0px; }
 
+.front-center-logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 40px; }
+
+.front-center-logo {
+  width: 275px;
+  height: 275px; }
 
 .entry-title-about {
   font-size: 48px;
@@ -765,6 +777,16 @@ object {
   position: absolute;
   background-color: #248A83;
   color: #fff; }
+
+.journal-posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white; }
+
+.front-journal-posts {
+  border: 1px solid blue;
+  margin: 20px; }
 
 .widget-area {
   display: -webkit-box;

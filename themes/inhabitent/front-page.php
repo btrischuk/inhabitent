@@ -12,10 +12,65 @@ get_header(); ?>
 		<main id="main" class="site-main-front-page" role="main">
 
      
-      
-      <img src=<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ?>>;
+      <section class="front-center-logo-wrapper">
+        <img class="front-center-logo" src=<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ?>>;
+<!-- shop stuff -->
+        <section class="product-info container">
+            <h2>Shop Stuff</h2>
+            <?php
+               $terms = get_terms( array(
+                   'taxonomy' => 'product-type',
+                   'hide_empty' => 0,
+               ) );
+               if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+            ?>
+               <div class="product-type-blocks">
 
-      
+                  <?php foreach ( $terms as $term ) : ?>
+
+                     <div class="product-type-block-wrapper">
+                        <img src="<?php echo get_template_directory_uri() . '/images/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
+                        <p><?php echo $term->description; ?></p>
+                        <p><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> Stuff</a></p>
+                     </div>
+
+                  <?php endforeach; ?>
+
+               </div>
+               
+            <?php endif; ?>
+         </section>
+
+<!-- journal -->
+
+      </section>
+      <h2> inhabitent journal</h2>
+<article class="journal-posts">
+  
+  <?php
+  global $post;
+  $args = array( 'posts_per_page' => 3, 'order'=> 'ASC', 'orderby' => 'title' );
+  $postslist = get_posts( $args );
+  foreach ( $postslist as $post ) :
+    setup_postdata( $post ); ?> 
+
+    <div class="front-journal-posts">
+      <?php the_post_thumbnail( 'medium' ); ?>
+    
+        <time><?php the_date(); ?></time>/ <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+        <h2><?php the_title(); ?></h2>
+        <button><a href="<?php the_permalink () ?>">read entry</a></button>
+               
+  </div>
+  <?php
+  endforeach; 
+  wp_reset_postdata();
+  ?>
+
+
+</article>
+
+
   
 
 		<?php if ( have_posts() ) : ?>
