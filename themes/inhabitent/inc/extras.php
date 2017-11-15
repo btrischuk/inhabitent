@@ -27,8 +27,8 @@ function inhabitent_login_logo() { ?>
 	<style type="text/css">
 			#login h1 a {
 				background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
-				height:57px;
-				width:320px;
+				height: 57px;
+				width: 320px;
 				background-size: 320px 65px;
 				background-repeat: no-repeat;
 				padding-bottom: 10px;
@@ -49,6 +49,53 @@ function inhabitent_logo_url_title(){
 
 add_filter('login_headertitle','inhabitent_logo_url_title' );
 
+
+//about page
+function inhabitent_about_dynamic_css() {
+	if ( ! is_page_template( 'page-templates/about.php' ) ) {
+		return;
+	}
+
+	$image = CFS()->get( 'about_header_image' );
+
+	if ( ! $image ) {
+		return;
+	}
+
+	$hero_css = ".page-template-about .entry-header {
+		background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+		url({$image}) no-repeat center bottom;
+		background-size: cover, cover;
+	}";
+
+	wp_add_inline_style( 'tent-style', $hero_css );
+}
+
+add_action( 'wp_enqueue_scripts', 'inhabitent_about_dynamic_css');
+
+//home page 
+// function inhabitent_front_page_dynamic_css() {
+// 	if ( ! is_page_template( 'front-page.php' ) ) {
+// 		return;
+// 	}
+
+// 	$image = CFS()->get( 'front_page_header_image' );
+
+// 	if ( ! $image ) {
+// 		return;
+// 	}
+
+// 	$hero_css = ".page-template-front-page .entry-header {
+// 		background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+// 		url({$image}) no-repeat center bottom;
+// 		background-size: cover, cover;
+// 	}";
+
+// 	wp_add_inline_style( 'tent-style', $hero_css );
+
+
+// add_action( 'wp_enqueue_scripts', 'inhabitent_front_page_dynamic_css');
+// }
 
 
 // function my_login_logo(){

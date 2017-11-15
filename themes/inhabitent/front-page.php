@@ -1,14 +1,16 @@
 <?php
 /**
  * The front page (home page) template file.
+ * Template Name: Front page
  *
- * @package RED_Starter_Theme
+ * @package inhabitent_Theme
  */
 
 get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main-front-page" role="main">
+  
 
 		<?php if ( have_posts() ) : ?>
 
@@ -24,9 +26,12 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
       <?php while ( have_posts() ) : the_post(); ?>
-      <!-- <section class"center-logo">
-        <img src="../../images/logos/inhabitent-logo-full.svg" alt="inhabitent logo">
-      </section> -->
+
+
+      <section class"center-logo">
+        <img src="../../images/logos/inhabitent-logo-full.svg" alt="inhabitent logo!!!!!!">
+      </section>
+
     <!-- body { -->
     <!-- background-image: url("inhabitent-logo-full.svg"); -->
     <!-- }<i class="fa fa-thermometer-empty" aria-hidden="true"></i> -->
