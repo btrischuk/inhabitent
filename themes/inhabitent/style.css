@@ -341,7 +341,7 @@ img {
   /* Adhere to container width. */ }
 
 .content-area {
-  width: 90%;
+  width: 70%;
   padding-right: 40px; }
 
 table {
@@ -693,10 +693,6 @@ object {
   color: white;
   padding: 1rem; }
 
-.entry-header {
-  height: 100vh;
-  width: 100vw; }
-
 .site-main-front-page {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/home-hero.jpg);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg);
@@ -720,11 +716,55 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 40px;
-  position: relative; }
+  padding-top: 40px; }
+
+.entry-title-about {
+  font-size: 48px;
+  color: #fff; }
+
+.page-template-about .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh; }
 
 .entry-title {
-  position: absolute; }
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  left: -10px;
+  background-color: #248A83;
+  color: #fff;
+  margin: 10px;
+  padding: 15px; }
+
+.entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  align-items: center; }
+  .entry-header h2 {
+    color: white; }
+
+.entry-header {
+  height: auto;
+  width: 100%; }
+
+.entry-meta {
+  position: absolute;
+  background-color: #248A83;
+  color: #fff; }
 
 .widget-area {
   display: -webkit-box;

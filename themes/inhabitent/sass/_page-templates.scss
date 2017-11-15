@@ -23,16 +23,11 @@
   padding: 1rem;
 }
 
-.entry-header  {
-  height: 100vh;
-  width: 100vw;
-}
-
 .site-main-front-page {
   background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),
-  // url(../../images/logos/inhabitent-logo-full.svg) no-repeat center;
   url(../../images/home-hero.jpg);  
   background-size: cover;
+  // background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center;
   width: 100vw;
   height: 100vh;
 
@@ -54,17 +49,84 @@
 }
 
 //main
+// .entry-header {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 3rem 7% 3rem 12%;
 
+//   h2 {
+//       position: absolute;
+//       left: 0;
+//       top: 1rem;
+//       padding-right: 2rem;
+//       color: white;
+//       background: $font_gr;
+//       text-transform: uppercase;
+//       font-family: 'Novocento', Arial, Helvetica, sans-serif;
+//   }
+//   .wp-post-image {
+//       width: 100%;
+//   }
+// }
 
 
 .site-content {
   display: flex;
   padding-top: 40px;
-  position: relative;
+  // position: relative;
+}
+
+.entry-title-about {
+  font-size: 48px;
+  color: $color__background-body;
+}
+
+.page-template-about .entry-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .entry-title {
   position: absolute;
+  left: 0px;
+  top: 30px;
+  left: -10px;
+  // top: 185px;
+  background-color: $color__brand-green;
+  color: $color__background-body;
+  margin: 10px;
+  padding: 15px;
+}
+
+.entry-header {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  position: relative;
+  align-items: center;
+  // margin: 3rem 7% 3rem 12%;
+  // width: 70%;
+  
+
+  h2 {
+    color: white;
+  }
+}
+
+.entry-header  {
+  height: auto;
+  width: 100%;
+}
+
+.entry-meta {
+  position: absolute;
+  background-color: $color__brand-green;
+  color: $color__background-body;
 }
 
 //widget 

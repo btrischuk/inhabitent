@@ -10,6 +10,12 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main-front-page" role="main">
+
+     
+      
+      <img src=<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ?>>;
+
+      
   
 
 		<?php if ( have_posts() ) : ?>
@@ -28,9 +34,9 @@ get_header(); ?>
       <?php while ( have_posts() ) : the_post(); ?>
 
 
-      <section class"center-logo">
+      <!-- <section class"center-logo">
         <img src="../../images/logos/inhabitent-logo-full.svg" alt="inhabitent logo!!!!!!">
-      </section>
+      </section> -->
 
     <!-- body { -->
     <!-- background-image: url("inhabitent-logo-full.svg"); -->
