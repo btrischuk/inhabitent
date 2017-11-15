@@ -11,13 +11,13 @@ get_header();?>
   <main id="main" class="site-main" role="main">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <header class="entry-header custom-hero">
-        <div calss="container">
+        <div class="about-header-container">
           <?php the_title( '<h1 class="entry-title-about">', '</h1>' ); ?>
         </div>
       </header>
 
-      <div class="container">
-        <div class="entry-content">
+      <div class="about-container">
+        <div class="about-entry-content">
           <h2>Our Story</h2>
           <?php echo CFS()->get( 'about_our_story' ); ?>
 

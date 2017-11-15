@@ -21,8 +21,11 @@ get_header(); ?>
             <?php
                $terms = get_terms( array(
                    'taxonomy' => 'product-type',
-                   'hide_empty' => 0,
+                   'hide_empty' => 0,  //false
                ) );
+
+               var_dump($terms);
+
                if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
             ?>
                <div class="product-type-blocks">
