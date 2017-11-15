@@ -48,7 +48,7 @@
   position: 0px;
 }
 
-//main
+// main
 // .entry-header {
 //   position: relative;
 //   display: flex;
@@ -130,15 +130,27 @@ justify-content: center;
 .entry-header  {
   height: auto;
   width: 100%;
+  margin-left: 20px;
 }
 
 .entry-meta {
   position: absolute;
   background-color: $color__brand-green;
   color: $color__background-body;
+  bottom: 0px;
+  right: 0px;
+  padding: 10px;
 }
 
 // journal front page
+
+.journal-header {
+  display: flex;
+  color: blue;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
 .journal-posts  {
   display: flex;
   color: white;
@@ -199,6 +211,9 @@ footer h2 {
   height:280px;
   width: 25%;
   flex-wrap: wrap;
+  a {
+    color: white;
+  }
 }
 
 footer p {

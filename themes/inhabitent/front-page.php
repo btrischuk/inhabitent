@@ -14,6 +14,7 @@ get_header(); ?>
      
       <section class="front-center-logo-wrapper">
         <img class="front-center-logo" src=<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ?>>;
+
 <!-- shop stuff -->
         <section class="product-info container">
             <h2>Shop Stuff</h2>
@@ -40,11 +41,12 @@ get_header(); ?>
                
             <?php endif; ?>
          </section>
-
-<!-- journal -->
-
       </section>
-      <h2> inhabitent journal</h2>
+
+      <!-- journal -->
+      
+    <h2 class="journal-header"> inhabitent journal</h2>
+
 <article class="journal-posts">
   
   <?php

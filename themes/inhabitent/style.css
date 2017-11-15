@@ -771,12 +771,26 @@ object {
 
 .entry-header {
   height: auto;
-  width: 100%; }
+  width: 100%;
+  margin-left: 20px; }
 
 .entry-meta {
   position: absolute;
   background-color: #248A83;
-  color: #fff; }
+  color: #fff;
+  bottom: 0px;
+  right: 0px;
+  padding: 10px; }
+
+.journal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: blue;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase; }
 
 .journal-posts {
   display: -webkit-box;
@@ -845,6 +859,8 @@ footer h2 {
   width: 25%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .footer-block-item a {
+    color: white; }
 
 footer p {
   color: #fff; }
