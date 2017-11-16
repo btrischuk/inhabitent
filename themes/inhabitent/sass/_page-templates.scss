@@ -23,13 +23,16 @@
   padding: 1rem;
 }
 
-.site-main-front-page {
+.hero {
   background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),
   url(../../images/home-hero.jpg);  
   background-size: cover;
   // background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 
 }
 
@@ -45,19 +48,22 @@
 }
 
 .front-center-logo-wrapper{
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .site-content {
   display: flex;
   padding-top: 40px;
+  justify-content: center;
   // position: relative;
 }
 
 .front-center-logo {
   width: 275px;
   height: 275px;
+  position: absolute;
+  bottom: 25%;
 }
 
 .entry-title-about {
@@ -118,6 +124,7 @@ justify-content: center;
 // journal front page
 .front-container-content {
   display: flex;
+  flex-direction: column;
 }
 
 .journal-header {
@@ -129,14 +136,14 @@ justify-content: center;
 
 .journal-posts  {
   display: flex;
-  color: white;
+  color: blue;
 
 }
 
 .front-journal-posts  {
   border: 1px solid blue;
   margin: 20px;
-  display: flex;
+  // display: flex;
   flex-direction: column;
 }
 

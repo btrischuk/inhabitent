@@ -10,13 +10,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
     
-		<main id="main" class="site-main-front-page" role="main">
-
-      <section class="front-center-logo-wrapper">
-        <img class="front-center-logo" src=<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ?>>;
-
-      </section>
-
+	  <main id="main" class="site-main-front-page" role="main">
 
       <article class="front-container-content">
 
@@ -65,10 +59,10 @@ get_header(); ?>
       <button><a href="<?php the_permalink () ?>">read entry</a></button>
     </div>
 
-  </section>
   
-  <?php endforeach; wp_reset_postdata(); ?>
+      <?php endforeach; wp_reset_postdata(); ?>
     
+  </section>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -100,4 +94,6 @@ get_header(); ?>
   </main><!-- #main -->
 </div><!-- #primary -->
   <?php get_footer(); ?>
+
+
 

@@ -37,5 +37,8 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
-			<div class="hero"></div>
+			<div class="hero">
+				<img class="front-center-logo" src=<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ?>>;
+			</div>
+			
 			<div id="content" class="site-content">

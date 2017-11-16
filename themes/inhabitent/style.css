@@ -693,12 +693,20 @@ object {
   color: white;
   padding: 1rem; }
 
-.site-main-front-page {
+.hero {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/home-hero.jpg);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg);
   background-size: cover;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center; }
 
 .logo {
   background: url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
@@ -721,11 +729,16 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 40px; }
+  padding-top: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .front-center-logo {
   width: 275px;
-  height: 275px; }
+  height: 275px;
+  position: absolute;
+  bottom: 25%; }
 
 .entry-title-about {
   font-size: 48px;
@@ -781,7 +794,11 @@ object {
 .front-container-content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .journal-header {
   display: -webkit-box;
@@ -797,14 +814,11 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white; }
+  color: blue; }
 
 .front-journal-posts {
   border: 1px solid blue;
   margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
