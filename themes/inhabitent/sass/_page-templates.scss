@@ -44,33 +44,6 @@
   top: 10px;
 }
 
-.logo-container {
-  position: 0px;
-}
-
-// main
-// .entry-header {
-//   position: relative;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin: 3rem 7% 3rem 12%;
-
-//   h2 {
-//       position: absolute;
-//       left: 0;
-//       top: 1rem;
-//       padding-right: 2rem;
-//       color: white;
-//       background: $font_gr;
-//       text-transform: uppercase;
-//       font-family: 'Novocento', Arial, Helvetica, sans-serif;
-//   }
-//   .wp-post-image {
-//       width: 100%;
-//   }
-// }
-
 .front-center-logo-wrapper{
 display: flex;
 justify-content: center;
@@ -143,6 +116,9 @@ justify-content: center;
 }
 
 // journal front page
+.front-container-content {
+  display: flex;
+}
 
 .journal-header {
   display: flex;
@@ -160,6 +136,8 @@ justify-content: center;
 .front-journal-posts  {
   border: 1px solid blue;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 //widget 
@@ -172,13 +150,20 @@ justify-content: center;
   border-left: $color__border;
 }
 
-.widget-area p, a, li{
+.widget-area  a {
   color: green;
 }
 
 .textwidget span {
   font-weight: bold;
 }
+
+.fa-phone:before, .fa-envelope:before, .fa-map-marker:before {
+  color: black;
+  padding-right: 1rem;
+}
+
+ 
 
 //about 
 
@@ -220,9 +205,10 @@ footer h2 {
   height:280px;
   width: 25%;
   flex-wrap: wrap;
-  a {
+  a, .fa-phone:before, .fa-envelope:before  {
     color: white;
   }
+  
 }
 
 footer p {

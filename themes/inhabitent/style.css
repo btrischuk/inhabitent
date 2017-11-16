@@ -709,9 +709,6 @@ object {
   left: 10px;
   top: 10px; }
 
-.logo-container {
-  position: 0px; }
-
 .front-center-logo-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -781,6 +778,11 @@ object {
   right: 0px;
   padding: 10px; }
 
+.front-container-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .journal-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -799,7 +801,14 @@ object {
 
 .front-journal-posts {
   border: 1px solid blue;
-  margin: 20px; }
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .widget-area {
   display: -webkit-box;
@@ -818,11 +827,15 @@ object {
   width: 40%;
   border-left: 1px solid #e1e1e1; }
 
-.widget-area p, a, li {
+.widget-area a {
   color: green; }
 
 .textwidget span {
   font-weight: bold; }
+
+.fa-phone:before, .fa-envelope:before, .fa-map-marker:before {
+  color: black;
+  padding-right: 1rem; }
 
 .about-entry-content {
   display: -webkit-box;
@@ -871,7 +884,7 @@ footer h2 {
   width: 25%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .footer-block-item a {
+  .footer-block-item a, .footer-block-item .fa-phone:before, .footer-block-item .fa-envelope:before {
     color: white; }
 
 footer p {
