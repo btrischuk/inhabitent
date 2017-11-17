@@ -15,8 +15,8 @@ get_header(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
-
-		</main><!-- #main -->
+			[contact-form-7 id="73" title="Send Us Email!"]
+				</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>

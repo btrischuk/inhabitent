@@ -432,6 +432,10 @@ a {
     outline: 0; }
 
 /* Menus */
+.main-navigation a {
+  color: white;
+  padding: 1rem; }
+
 .main-navigation {
   clear: both;
   display: block;
@@ -443,10 +447,12 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: blue;
   border-bottom: 0;
   position: fixed;
-  text-shadow: 1px 1px 2px #323232; }
+  text-shadow: 1px 1px 2px #323232;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  z-index: 3; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -723,6 +729,22 @@ object {
   position: absolute;
   bottom: 25%; }
 
+.product-info h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.product-type-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 .entry-title-about {
   font-size: 48px;
   color: #fff; }
@@ -855,15 +877,6 @@ object {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto; }
-
-.main-navigation {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #e1e1e1;
-  z-index: 3; }
-
-.main-navigation a {
-  color: white;
-  padding: 1rem; }
 
 footer {
   background: url(../../images/dark-wood@2x.png) center no-repeat;

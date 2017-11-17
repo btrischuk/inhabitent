@@ -28,6 +28,11 @@ a {
 // #menu-item-69 {
 // 	color:blue;
 // }
+.main-navigation a {
+  color:white; 
+  padding: 1rem;
+}
+
 .main-navigation {
 	clear: both;
 	display: block;
@@ -35,10 +40,13 @@ a {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
-	background-color: blue;
   border-bottom: 0;
   position: fixed;
-	text-shadow: 1px 1px 2px #323232;
+	text-shadow: $color__text-shadow;
+	background-color: $color__background-header;  
+	border-bottom: $color__border;
+	z-index: 3;
+	
 	
 
 	ul {

@@ -47,6 +47,22 @@
   bottom: 25%;
 }
 
+// SHOP STUFF
+.product-info h2 {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+}
+
+.product-type-blocks {
+  display: flex;
+  justify-content: center;
+}
+
+// .product-type-blocks {
+//   display: flex;
+// }
+
 .entry-title-about {
   font-size: 48px;
   color: $color__background-body;
