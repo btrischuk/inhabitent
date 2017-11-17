@@ -1,10 +1,8 @@
 body:not(.home):not(.about):not(.post-type-archive):not(.tax-product-type):not(.single-product) .content-area {
   width: 70%;
-  // display: flex;
+  padding-top: 85px;
 }
 
 body:not(.home):not(.about):not(.post-type-archive):not(.tax-product-type):not(.single-product) .site-content {
 display: flex;
-// padding-top: 40px;
-// justify-content: center;
 }
