@@ -78,6 +78,10 @@
     display: flex;
   }
 }
+.product-type-block-wrapper:hover {
+  border: $color__orange-border;
+  border-top-width: 5px;
+}
 
 .stuff-button  {
   position: absolute;
@@ -90,6 +94,16 @@
 
 // .stuff-buttona:hover{
 //   background-color: black;
+// }
+
+//archive
+
+// .archive-content-area {
+//   display: grid;
+//   grid-template-columns: 1fr, 1fr;
+//   grid-template-rows: 1fr, 1fr, 1fr;
+//   background-color: blue;  
+
 // }
 
 .entry-title-about {
@@ -108,12 +122,12 @@
 .entry-title {
   position: absolute;
   left: 0px;
-  top: 30px;
-  left: -10px;
+  top: 0px;
+  width: 450px;
   // top: 185px;
   background-color: $color__brand-green;
   color: $color__background-body;
-  margin: 10px;
+  margin-top: 30px;
   padding: 15px;
 }
 

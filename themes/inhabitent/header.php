@@ -39,3 +39,6 @@
 
 		
 			<div id="content" class="site-content">
+
+
+			<!-- home_url retrieves home url for the site  -->
