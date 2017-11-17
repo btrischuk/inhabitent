@@ -7,7 +7,7 @@
 
 get_header();?>
 
-<div id="priimary" class="content-area">
+<div id="primary" class="journal-content-area">
   <main id="main" class="site-main" role="main">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <header class="entry-header custom-hero">

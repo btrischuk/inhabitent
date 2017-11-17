@@ -8,11 +8,16 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+  <div class="hero">
+		<img class="front-center-logo" src=<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ?>>;
+	</div>
+			
+
+	  <div id="primary" class="content-area">
     
 	  <main id="main" class="site-main-front-page" role="main">
 
-      <article class="front-container-content">
+    <article class="front-container-content">
 
   <!-- shop stuff -->
   <section class="product-info container">
@@ -38,10 +43,9 @@ get_header(); ?>
 
       <!-- journal -->
       
-      <h2 class="journal-header"> inhabitent journal</h2>
+  <h2 class="journal-header">inhabitent journal</h2>
 
   <section class="journal-posts">
-
 
     <?php
   
@@ -53,13 +57,16 @@ get_header(); ?>
     
     <div class="front-journal-posts">
     
-      <?php the_post_thumbnail( 'medium' ); ?>
-      <time><?php the_date(); ?></time>/ <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-      <h2><?php the_title(); ?></h2>
-      <button><a href="<?php the_permalink () ?>">read entry</a></button>
+      <div class="front-page-thumbnail">
+        <?php the_post_thumbnail( 'medium' ); ?>
+      </div>
+      <div class="front-journal-posts-text">
+        <time><?php the_date(); ?></time>/ <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
+        <h2><?php the_title(); ?></h2>
+        <button><a href="<?php the_permalink () ?>">read entry</a></button>
+      </div>  
     </div>
 
-  
       <?php endforeach; wp_reset_postdata(); ?>
     
   </section>

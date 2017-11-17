@@ -61,13 +61,22 @@ dd {
 
 img {
 	height: auto; /* Make sure images are scaled correctly. */
-	width: 100%; /* Adhere to container width. */
+	// width: 100%; /* Adhere to container width. */
 	// position: absolute;
 }
 
-.content-area {
-	width: 70%;
-	padding-right: 40px;
+.front-page-thumbnail {
+	width: auto;
+}
+
+// .journal-content-area {
+// 	width: 70%;
+// 	padding-right: 40px;
+// 	padding-left: 30px;
+// }
+
+main .site-main {
+	padding-left: 30px;
 }
 
 // img:nth-child(1){

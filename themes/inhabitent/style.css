@@ -336,13 +336,13 @@ dd {
 
 img {
   height: auto;
-  /* Make sure images are scaled correctly. */
-  width: 100%;
-  /* Adhere to container width. */ }
+  /* Make sure images are scaled correctly. */ }
 
-.content-area {
-  width: 70%;
-  padding-right: 40px; }
+.front-page-thumbnail {
+  width: auto; }
+
+main .site-main {
+  padding-left: 30px; }
 
 table {
   margin: 0 0 1.5rem;
@@ -357,17 +357,18 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  border-color: 1px solid #000;
+  background: #fff;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14.4px;
+  font-size: 0.9rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
+  padding: .75rem 1.5rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  position: absolute;
+  bottom: .75rem;
+  left: .75rem; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -684,15 +685,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.main-navigation {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #e1e1e1;
-  z-index: 3; }
-
-.main-navigation a {
-  color: white;
-  padding: 1rem; }
-
 .hero {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/home-hero.jpg);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(../../images/home-hero.jpg);
@@ -721,15 +713,6 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -781,7 +764,7 @@ object {
 
 .entry-header {
   height: auto;
-  width: 100%; }
+  width: 40%; }
 
 .entry-meta {
   position: absolute;
@@ -804,7 +787,6 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: blue;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -813,16 +795,26 @@ object {
 .journal-posts {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  color: blue; }
+  display: flex; }
+  .journal-posts h2 {
+    color: #248A83;
+    padding-bottom: 30px;
+    padding-left: 10px; }
+  .journal-posts a {
+    color: #000;
+    text-decoration: none; }
+
+.front-journal-posts-text {
+  padding-left: 20px; }
 
 .front-journal-posts {
-  border: 1px solid blue;
+  border: 1px solid #e1e1e1;
   margin: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  position: relative; }
 
 .widget-area {
   display: -webkit-box;
@@ -842,7 +834,7 @@ object {
   border-left: 1px solid #e1e1e1; }
 
 .widget-area a {
-  color: green; }
+  color: #248A83; }
 
 .textwidget span {
   font-weight: bold; }
@@ -863,6 +855,15 @@ object {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto; }
+
+.main-navigation {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  z-index: 3; }
+
+.main-navigation a {
+  color: white;
+  padding: 1rem; }
 
 footer {
   background: url(../../images/dark-wood@2x.png) center no-repeat;
@@ -927,3 +928,6 @@ footer p {
 .site-info p {
   text-align: center;
   text-transform: uppercase; }
+
+body:not(.home):not(.about):not(.post-type-archive):not(.tax-product-type):not(.single-product) .content-area {
+  width: 70%; }

@@ -1,0 +1,63 @@
+footer {
+  background:
+  url(../../images/dark-wood@2x.png)center no-repeat; 
+  background-size: 100%;
+}
+
+footer h2 {
+  text-transform: uppercase;
+  color: $color__brand-orange;
+}
+
+.footer-block-container {
+  height: 280px;
+  min-width:1200px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap
+}
+
+.footer-block-item {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  width: 25%;
+  flex-wrap: wrap;
+  a, .fa-phone:before, .fa-envelope:before  {
+    color: white;
+  }
+}
+
+footer p {
+  color: $color__background-body;
+}
+
+.footer-block-item p span {
+  font-weight: bold;
+}
+
+.footer-block-item:last-child {
+  width: 50%;
+}
+
+.footer-logo {
+  height: 100px;
+  background:
+  url(../../images/logos/inhabitent-logo-text.svg)center no-repeat; 
+}
+
+.social-links a {
+  padding-left: 10px;
+  font-size: 1.3rem;
+}
+
+.site-info {
+  height: 30px;
+  align-items: flex-end; 
+}
+
+.site-info p {
+  text-align: center;
+  text-transform: uppercase;
+}

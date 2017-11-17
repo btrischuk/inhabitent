@@ -1,0 +1,10 @@
+.main-navigation {
+  background-color: $color__background-header;  
+  border-bottom: $color__border;
+  z-index: 3;
+}
+
+.main-navigation a {
+  color:white; 
+  padding: 1rem;
+}
