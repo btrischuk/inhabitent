@@ -31,25 +31,27 @@ get_header(); ?>
 
 			<div class="shop-item-container">
 				
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 			
-				<div class="title-price">
-					<?php echo CFS() ->get (price) ?>
+					<div class="title-price">
+						<div class="testing">
+						<?php echo CFS() ->get (price) ?>
 
-					<?php
-						get_template_part( 'template-parts/content' );
-					?>
-					<?php endwhile; ?>
+						<?php
+							get_template_part( 'template-parts/content' );
+						?>
+						</div>
+						<?php endwhile; ?>
 
-					<?php the_posts_navigation(); ?>
-				</div> title price
-			</div>
+						<?php the_posts_navigation(); ?>
+					</div> <!--title price -->
+			</div> <!--shop-item-container -->
 
-		<?php else : ?>
+			<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
+			<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

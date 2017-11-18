@@ -34,9 +34,9 @@ get_header(); ?>
 				
 			<?php while ( have_posts() ) : the_post(); ?>
 			
-		<div class="title-price">
+		  <div class="title-price">
 				<?php echo CFS() ->get (price) ?>
-		</div>
+		  </div>
 
 				<?php
 					get_template_part( 'template-parts/content' );
@@ -46,11 +46,11 @@ get_header(); ?>
 			<?php the_posts_navigation(); ?>
 			</div>
 
-		<?php else : ?>
+		  <?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
+		  <?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
