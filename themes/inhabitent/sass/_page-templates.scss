@@ -96,64 +96,6 @@
 //   background-color: black;
 // }
 
-//archive
-
-// .archive-content-area {
-//   display: grid;
-//   grid-template-columns: 1fr, 1fr;
-//   grid-template-rows: 1fr, 1fr, 1fr;
-//   background-color: blue;  
-
-// }
-
-.entry-title-about {
-  font-size: 48px;
-  color: $color__background-body;
-}
-
-.page-template-about .entry-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-}
-
-.entry-title {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 450px;
-  // top: 185px;
-  background-color: $color__brand-green;
-  color: $color__background-body;
-  margin-top: 30px;
-  padding: 15px;
-}
-
-.entry-header {
-  display: flex;
-  align-items: center;
-  position: relative;
-  align-items: center;
-  h2 {
-    color: white;
-  }
-}
-
-.entry-header  {
-  height: auto;
-  width: 40%;
-}
-
-.entry-meta {
-  position: absolute;
-  background-color: $color__brand-green;
-  color: $color__background-body;
-  bottom: 0px;
-  right: 0px;
-  padding: 10px;
-}
 
 // journal front page
 .front-container-content {

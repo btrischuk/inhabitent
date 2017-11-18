@@ -16,18 +16,18 @@ get_header(); ?>
 
         <?php
         
-					// the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
         ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+<div>
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
-
+</div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>

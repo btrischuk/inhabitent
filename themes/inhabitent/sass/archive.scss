@@ -3,3 +3,34 @@
   justify-content: center;
   padding-top: 50px;
 }
+
+
+.shop-item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  // justify-content: center;
+// flex-wrap: wrap;
+  img {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+}
+  
+body:not(.product-template-default) .entry-content {
+  display: none;
+}
+
+.product {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+body:not()
+.entry-header img {
+  width: 640px;
+  height: 440px;
+}
