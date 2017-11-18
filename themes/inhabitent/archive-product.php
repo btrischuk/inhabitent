@@ -31,18 +31,21 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 
 			<div class="shop-item-container">
-				
+				<ul>
 			<?php while ( have_posts() ) : the_post(); ?>
-			
-		  <div class="title-price">
-				<?php echo CFS() ->get (price) ?>
-		  </div>
 
+		  <li class="title-price">
+
+				<?php echo CFS() ->get (price) ?>
+				 
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
+								</li>
+
 			<?php endwhile; ?>
 
+				</ul>
 			<?php the_posts_navigation(); ?>
 			</div>
 

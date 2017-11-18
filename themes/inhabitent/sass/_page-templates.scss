@@ -159,6 +159,9 @@
     bottom: -75px;
     background-color: $color__brand-green;
     color: $color__background-body;
+    .more-adventure-button:hover {
+      background-color: $color__brand-green;
+    }
   }
 }
 
