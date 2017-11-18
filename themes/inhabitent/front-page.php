@@ -89,15 +89,18 @@ get_header(); ?>
 
       <div class="mountain"> 
         <h3 class="men">Taking in the View at Big Mountain</h3>
-        <button class="yay">read more</button>
+        <button>read more</button>
       </div>
 
       <div class="gazing">
         <h3 class="men">Star-Gazing at the Night Sky</h3>
         <button>read more</button>
       </div>
-      </section>
+      <button class="more-adventure-button">more adventures</button>
+
+    </section>
   </div>
+
 
 
 

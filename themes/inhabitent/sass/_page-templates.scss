@@ -47,6 +47,10 @@
   bottom: 25%;
 }
 
+.site-main-front-page {
+  padding-bottom: 100px;
+}
+
 // SHOP STUFF
 .product-info h2 {
   display: flex;
@@ -108,6 +112,7 @@
 
 .journal-posts {
   display: flex;
+  margin: 0 auto;
   h2 {
     color: $color__brand-green;
     padding-bottom: 30px;
@@ -121,6 +126,8 @@
 
 .front-journal-posts-text {
   padding-left: 20px;
+  width: 300px;
+  height: 200px;
 }
 
 .front-journal-posts  {
@@ -137,7 +144,6 @@
   flex-direction: column;
 }
 .latest-adventures-content {
-
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-column-gap: 20px;
@@ -146,7 +152,14 @@
   height: 500px;
   // height: 100px;
   margin: 0 auto;
+  position: relative;
   // grid-template-rows: 50% 50%;
+  .more-adventure-button {
+    position: absolute;
+    bottom: -75px;
+    background-color: $color__brand-green;
+    color: $color__background-body;
+  }
 }
 
 .canoe {
@@ -170,6 +183,11 @@
   }
   button {
     position: absolute;
+    bottom: 210px;
+    left: 30px;
+    background-color: transparent;
+    border: $color__white-border;
+    color: $color__background-body;
   }
   
 }
@@ -191,6 +209,11 @@
   }
   button {
     position: absolute;
+    bottom: 30px;
+    left: 50px;
+    background-color: transparent;
+    border: $color__white-border;
+    color: $color__background-body;
   }
   
 }
@@ -214,8 +237,12 @@
   }
   button {
     position: absolute;
+    bottom: 80px;
+    left: 40px;
+    background-color: transparent;
+    border: $color__white-border;
+    color: $color__background-body;
   }
-  
 }
 
 .gazing {
@@ -238,9 +265,15 @@
   }
   button {
     position: absolute;
+    bottom: 80px;
+    left: 40px;
+    background-color: transparent;
+    border: $color__white-border;
+    color: $color__background-body;
   }
-  
 }
+
+
 
 //widget 
 .widget-area {

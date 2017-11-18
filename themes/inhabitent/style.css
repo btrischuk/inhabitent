@@ -733,6 +733,9 @@ object {
   position: absolute;
   bottom: 25%; }
 
+.site-main-front-page {
+  padding-bottom: 100px; }
+
 .product-info h2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -804,7 +807,8 @@ object {
 .journal-posts {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: 0 auto; }
   .journal-posts h2 {
     color: #248A83;
     padding-bottom: 30px;
@@ -814,7 +818,9 @@ object {
     text-decoration: none; }
 
 .front-journal-posts-text {
-  padding-left: 20px; }
+  padding-left: 20px;
+  width: 300px;
+  height: 200px; }
 
 .front-journal-posts {
   border: 1px solid #e1e1e1;
@@ -841,7 +847,13 @@ object {
   grid-row-gap: 20px;
   width: 1120px;
   height: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+  .latest-adventures-content .more-adventure-button {
+    position: absolute;
+    bottom: -75px;
+    background-color: #248A83;
+    color: #fff; }
 
 .canoe {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/canoe-girl.jpg) center no-repeat;
@@ -858,7 +870,12 @@ object {
     padding: 30px;
     font-weight: 300; }
   .canoe button {
-    position: absolute; }
+    position: absolute;
+    bottom: 210px;
+    left: 30px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff; }
 
 .beach {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/beach-bonfire.jpg) center no-repeat;
@@ -873,7 +890,12 @@ object {
     font-weight: 300;
     padding: 0 50px; }
   .beach button {
-    position: absolute; }
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff; }
 
 .mountain {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/mountain-hikers.jpg) center no-repeat;
@@ -888,7 +910,12 @@ object {
     font-weight: 300;
     padding: 0 40px; }
   .mountain button {
-    position: absolute; }
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff; }
 
 .gazing {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/night-sky.jpg) center no-repeat;
@@ -904,7 +931,12 @@ object {
     font-weight: 300;
     padding: 0 40px; }
   .gazing button {
-    position: absolute; }
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff; }
 
 .widget-area {
   display: -webkit-box;
