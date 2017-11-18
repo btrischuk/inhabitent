@@ -71,6 +71,36 @@ get_header(); ?>
     
   </section>
 
+
+  <!-- latest Adventures -->
+  <div class="latest-adventures-wrapper">
+    <h2 class="journal-header">latest Adventures</h2>
+    <section class="latest-adventures-content">
+
+      <div class="canoe">
+        <h3 class="men">Getting Back to Nature in a Canoe</h3>
+        <button>read more</button>
+      </div>
+
+      <div class="beach"> 
+        <h3 class="men">A Night with Friends at the Beach</h3>
+        <button>read more</button>
+      </div>
+
+      <div class="mountain"> 
+        <h3 class="men">Taking in the View at Big Mountain</h3>
+        <button class="yay">read more</button>
+      </div>
+
+      <div class="gazing">
+        <h3 class="men">Star-Gazing at the Night Sky</h3>
+        <button>read more</button>
+      </div>
+      </section>
+  </div>
+
+
+
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>

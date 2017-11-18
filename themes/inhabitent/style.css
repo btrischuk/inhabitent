@@ -789,7 +789,8 @@ object {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin: 0 5rem; }
 
 .journal-header {
   display: -webkit-box;
@@ -823,6 +824,87 @@ object {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative; }
+
+.latest-adventures-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.latest-adventures-content {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 1120px;
+  height: 500px;
+  margin: 0 auto; }
+
+.canoe {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/canoe-girl.jpg) center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/adventure-photos/canoe-girl.jpg) center no-repeat;
+  background-size: cover;
+  grid-column: 1/3;
+  grid-row: 1/3;
+  height: 80vh;
+  position: relative;
+  height: 500px; }
+  .canoe h3 {
+    color: #fff;
+    font-size: 3rem;
+    padding: 30px;
+    font-weight: 300; }
+  .canoe button {
+    position: absolute; }
+
+.beach {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/beach-bonfire.jpg) center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/adventure-photos/beach-bonfire.jpg) center no-repeat;
+  background-size: cover;
+  grid-column: 3/5;
+  position: relative;
+  height: 240px; }
+  .beach h3 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 300;
+    padding: 0 50px; }
+  .beach button {
+    position: absolute; }
+
+.mountain {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/mountain-hikers.jpg) center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/adventure-photos/mountain-hikers.jpg) center no-repeat;
+  background-size: cover;
+  grid-column: 3/4;
+  position: relative;
+  height: 240px; }
+  .mountain h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0 40px; }
+  .mountain button {
+    position: absolute; }
+
+.gazing {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/night-sky.jpg) center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/adventure-photos/night-sky.jpg) center no-repeat;
+  background-size: cover;
+  grid-column: 4/5;
+  grid-row: 2;
+  position: relative;
+  height: 240px; }
+  .gazing h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0 40px; }
+  .gazing button {
+    position: absolute; }
 
 .widget-area {
   display: -webkit-box;
@@ -1000,8 +1082,7 @@ body:not(.home):not(.about):not(.post-type-archive):not(.tax-product-type):not(.
 
 .shop-item-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr 1fr; }
   .shop-item-container img {
     width: 100%; }
   .shop-item-container header {
