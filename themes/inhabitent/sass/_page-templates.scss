@@ -303,8 +303,9 @@
 }
 //about 
 
-.about-entry-content {
-  display: flex;
+.page-template .about-header-container {
+  // display: flex;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;

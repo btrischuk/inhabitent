@@ -971,10 +971,8 @@ object {
   color: black;
   padding-right: 1rem; }
 
-.about-entry-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.page-template .about-header-container {
+  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
