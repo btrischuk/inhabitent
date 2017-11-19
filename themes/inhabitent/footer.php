@@ -14,7 +14,7 @@
 				<div class="footer-block-container">
 
 					<div class="footer-block-item">
-						<h2> contact info </h2>
+						<h3> contact info </h3>
 						<a href="#"><span><i class="fa fa-envelope" aria-hidden="true"></i>info@inhabitent.com</span></a>
 						<a href="#"><span><i class="fa fa-phone" aria-hidden="true"></i>604-604-6040</span></a>
 						<p class="social-links">
@@ -26,7 +26,7 @@
 					</div>
 
 					<div class="footer-block-item">
-						<h2> business hours</h2>
+						<h3> business hours</h3>
 						<p><span>Monday-Friday:</span> 9am to 5pm</p>
 						<p><span>Saturday:</span> 10am to 2pm</p>
 						<p><span>Sunday:</span> Closed</p>

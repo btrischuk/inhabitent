@@ -62,7 +62,7 @@ get_header(); ?>
       </div>
       <div class="front-journal-posts-text">
         <time><?php the_date(); ?></time>/ <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-        <h2><?php the_title(); ?></h2>
+        <h3><?php the_title(); ?></h3>
         <button><a href="<?php the_permalink () ?>">read entry</a></button>
       </div>  
     </div>

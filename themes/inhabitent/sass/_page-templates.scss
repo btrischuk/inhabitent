@@ -4,28 +4,21 @@
 
 /* Front page */
 
+.home h2 {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
 
 .hero {
   background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),
   url(../../images/home-hero.jpg);  
+  display: flex;  
   background-size: cover;
-  // background: url(../../images/logos/inhabitent-logo-full.svg) no-repeat center;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
   justify-content: center;
   align-content: center;
-}
-
-.logo {
-  background:
-  url(../../images/logos/inhabitent-logo-tent-white.svg) no-repeat;
-  background-size: 50px 33px;
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .front-center-logo-wrapper{
@@ -33,17 +26,10 @@
   justify-content: center;
 }
 
-// .site-content {
-//   display: flex;
-//   padding-top: 40px;
-//   justify-content: center;
-//   position: relative;
-// }
-
 .front-center-logo {
+  position: absolute;  
   width: 275px;
   height: 275px;
-  position: absolute;
   bottom: 25%;
 }
 
@@ -52,9 +38,11 @@
 }
 
 // SHOP STUFF
-.product-info h2 {
+.product-info.container {
+  padding-top: 30px;
+}
+.product-info h3 {
   display: flex;
-  // flex-direction: column;
   justify-content: center;
 }
 
@@ -66,15 +54,25 @@
 .product-type-blocks {
   display: flex;
   justify-content: space-evenly;
+  p {
+    font-family: $font__main;
+  }
 }
 
 .product-type-block-wrapper{
+  position: relative;  
   width: 250px;
-  height: 270px;
+  height: 300px;
   border: $color__border;
   border-top-width: 5px;
-  position: relative;
-  // margin: 0 auto;
+  padding-top: 15px;
+  p {
+    display: flex;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
   img {
     width: 70px;
     height: 70px;
@@ -91,6 +89,8 @@
   position: absolute;
   background-color: $color__brand-green;
   text-shadow: none;
+  left: 18%;
+  padding: 0 15px;
   a {
     color: $color__background-body;
   } 
@@ -108,6 +108,7 @@
   // color: blue;
   justify-content: center;
   text-transform: uppercase;
+  padding-top: 30px;
 }
 
 .journal-posts {
@@ -116,7 +117,7 @@
   img {
     height: 200px;
   }
-  h2 {
+  h3 {
     color: $color__brand-green;
     padding-bottom: 30px;
     padding-left: 10px;
@@ -325,7 +326,7 @@
   justify-content: center;
   flex-direction: column;
   width: 80vw;
-  h2 {
+  h3 {
     justify-content: center;
     display: flex;
 

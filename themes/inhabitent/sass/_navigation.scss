@@ -28,6 +28,18 @@ a {
 // #menu-item-69 {
 // 	color:blue;
 // }
+
+.logo {
+  background:
+  url(../../images/logos/inhabitent-logo-tent.svg) no-repeat;
+  position: absolute;  
+  background-size: 50px 33px;
+  height: 100px;
+  width: 100px;
+  left: 10px;
+  top: 10px;
+}
+
 .main-navigation a {
   color:white; 
   padding: 1rem;
@@ -42,7 +54,6 @@ a {
 	justify-content: flex-end;
   border-bottom: 0;
   position: fixed;
-	text-shadow: $color__text-shadow;
 	background-color: $color__background-header;  
 	border-bottom: $color__border;
 	z-index: 3;
@@ -99,15 +110,18 @@ a {
 		float: left;
 		position: relative;
 		text-transform: uppercase;
+
 		
 
 		&:hover > a,
 		&.focus > a {
+			color: $color__brand-purple;
 		}
 	}
 	a {
 		display: block;
 		text-decoration: none;
+		color: $color__brand-green;
 	}
 
 	.current_page_item > a,
