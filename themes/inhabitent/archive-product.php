@@ -16,37 +16,59 @@ get_header(); ?>
 			<header class="page-header">
 				<div class="shop-stuff-header-container">
 					<h1 class="shop-stuff-header">shop stuff</h1>
-					<!-- <p> do</p>
-					<p> eat</p>
-					<p> sleep</p>
-					<p> wear</p> -->
+	
 				</div>
+
+				<?php
+      		$terms = get_terms( array('taxonomy' => 'product-type','hide_empty' => 0, ) );
+
+					if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :?>
+
+    		<div class="product-type-blocks">
+
+      		<?php foreach ( $terms as $term ) : ?>
+						<!-- <div class="product-link-container"> -->
+        		<p class="shop-product-link"><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> stuff</a></p>
+				<!-- </div> -->
+			
+      	<?php endforeach; ?>
+
+     	  <?php endif; ?>
+
+				
 				<?php
 					// the_archive_title( '<h1 class="page-title">', '</h1>' );
 
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
+				
 			</header><!-- .page-header -->
+			
 
 			<?php /* Start the Loop */ ?>
 
 			<div class="shop-item-container">
 				<ul>
-			<?php while ( have_posts() ) : the_post(); ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
-		  <li class="title-price">
+					<li class="shop-item">
 
-				<?php echo CFS() ->get (price) ?>
-				 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-								</li>
+						<?php echo CFS() ->get (price) ?>
 
-			<?php endwhile; ?>
+						<?php
+							// the_archive_title( '<h1 class="page-title">', '</h1>' );
+							the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						?>
+						
+						<?php
+							get_template_part( 'template-parts/content' );
+						?>
+					</li>
+
+					<?php endwhile; ?>
 
 				</ul>
-			<?php the_posts_navigation(); ?>
+				<?php the_posts_navigation(); ?>
 			</div>
 
 		  <?php else : ?>

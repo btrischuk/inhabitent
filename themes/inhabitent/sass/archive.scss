@@ -4,6 +4,12 @@
   padding-top: 50px;
 }
 
+.shop-stuff-header {
+  text-transform: uppercase;
+}
+
+// .archive header 
+
 
 // .title-price {
   // display: grid;
@@ -43,8 +49,25 @@ body:not(.product-template-default) .entry-content {
   object-fit: contain;
 }
 
-body:not()
-.entry-header img {
-  width: 640px;
-  height: 440px;
+.product-type-blocks{
+  display: flex;
+  justify-content: center;
+  .shop-product-link {
+    padding: 2rem;
+    a {
+    color: $color__brand-green;
+    text-transform: uppercase;
+    text-decoration: none;
+    }
+  }
 }
+
+archive .product .entry-header {
+  width: 600px;
+}
+
+// body:not()
+// .entry-header img {
+//   width: 640px;
+//   height: 440px;
+// }
