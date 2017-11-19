@@ -16,7 +16,7 @@ get_header(); ?>
 			<header class="page-header">
 				<div class="shop-stuff-header-container">
 					<h1 class="shop-stuff-header">shop stuff</h1>
-	
+
 				</div>
 
 				<?php
@@ -46,6 +46,7 @@ get_header(); ?>
 			
 
 			<?php /* Start the Loop */ ?>
+			
 
 			<div class="shop-item-container">
 				<ul>
@@ -53,16 +54,23 @@ get_header(); ?>
 
 					<li class="shop-item">
 
-						<?php echo CFS() ->get (price) ?>
-
 						<?php
-							// the_archive_title( '<h1 class="page-title">', '</h1>' );
-							the_archive_description( '<div class="taxonomy-description">', '</div>' );
+						 the_post_thumbnail( 'large' ); 
+							// the_archive_description( '<div class="taxonomy-description">', '</div>' );
 						?>
 						
-						<?php
-							get_template_part( 'template-parts/content' );
+						<?php 
+						the_title( sprintf( '<h2 class="entry-title">', esc_url( get_template_part( get_permalink()) ) ),'......', '</h2>' ) ;
 						?>
+
+						<?php echo CFS() ->get (price) ?>
+
+
+						<?php	
+						get_template_part( 'template-parts/content' ); 
+						?>
+													
+
 					</li>
 
 					<?php endwhile; ?>
@@ -72,9 +80,7 @@ get_header(); ?>
 			</div>
 
 		  <?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 		  <?php endif; ?>
 
 		</main><!-- #main -->

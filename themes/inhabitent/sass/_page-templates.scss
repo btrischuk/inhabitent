@@ -113,6 +113,9 @@
 .journal-posts {
   display: flex;
   margin: 0 auto;
+  img {
+    height: 200px;
+  }
   h2 {
     color: $color__brand-green;
     padding-bottom: 30px;
