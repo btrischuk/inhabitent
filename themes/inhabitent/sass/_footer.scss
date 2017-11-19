@@ -2,6 +2,7 @@ footer {
   background:
   url(../../images/dark-wood@2x.png)center no-repeat; 
   background-size: 100%;
+  height: 25rem;
 }
 
 footer h2 {
@@ -10,23 +11,25 @@ footer h2 {
 }
 
 .footer-block-container {
-  height: 280px;
-  min-width:1200px;
-  display:flex;
+  display: flex;
   flex-direction: row;
-  flex-wrap: nowrap
+  flex-wrap: nowrap;
+  height: 280px;
+  min-width: 1200px;
 }
 
 .footer-block-item {
-  background-color: transparent;
   display: flex;
+  background-color: transparent;
+  flex-wrap: wrap;
   flex-direction: column;
+  margin: 3rem;  
   height: 280px;
   width: 25%;
-  padding-left: 40px;
-  flex-wrap: wrap;
-  a, .fa-phone:before, .fa-envelope:before  {
-    color: white;
+  a, .fa-phone:before, .fa-envelope:before {
+    color: $color__background-body;
+    text-decoration: none;
+    line-height: 3rem;    
   }
 }
 
@@ -39,13 +42,19 @@ footer p {
 }
 
 .footer-block-item:last-child {
+  position: relative;  
   width: 50%;
 }
 
 .footer-logo {
-  height: 100px;
   background:
-  url(../../images/logos/inhabitent-logo-text.svg)center no-repeat; 
+  url(../../images/logos/inhabitent-logo-text.svg) center no-repeat; 
+  background-size: contain;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  height: 50px;
+  width: 280px;
 }
 
 .social-links a {
@@ -54,11 +63,11 @@ footer p {
 }
 
 .site-info {
+  align-items: flex-end;   
   height: 30px;
-  align-items: flex-end; 
-}
-
-.site-info p {
-  text-align: center;
-  text-transform: uppercase;
+  padding-top: 40px;
+  p {
+    text-align: center;
+    text-transform: uppercase;
+  }
 }

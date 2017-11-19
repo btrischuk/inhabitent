@@ -986,15 +986,14 @@ object {
 
 footer {
   background: url(../../images/dark-wood@2x.png) center no-repeat;
-  background-size: 100%; }
+  background-size: 100%;
+  height: 25rem; }
 
 footer h2 {
   text-transform: uppercase;
   color: #d99054; }
 
 .footer-block-container {
-  height: 280px;
-  min-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1003,24 +1002,28 @@ footer h2 {
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
+      flex-wrap: nowrap;
+  height: 280px;
+  min-width: 1200px; }
 
 .footer-block-item {
-  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: transparent;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 3rem;
   height: 280px;
-  width: 25%;
-  padding-left: 40px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  width: 25%; }
   .footer-block-item a, .footer-block-item .fa-phone:before, .footer-block-item .fa-envelope:before {
-    color: white; }
+    color: #fff;
+    text-decoration: none;
+    line-height: 3rem; }
 
 footer p {
   color: #fff; }
@@ -1029,25 +1032,31 @@ footer p {
   font-weight: bold; }
 
 .footer-block-item:last-child {
+  position: relative;
   width: 50%; }
 
 .footer-logo {
-  height: 100px;
-  background: url(../../images/logos/inhabitent-logo-text.svg) center no-repeat; }
+  background: url(../../images/logos/inhabitent-logo-text.svg) center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  height: 50px;
+  width: 280px; }
 
 .social-links a {
   padding-left: 10px;
   font-size: 1.3rem; }
 
 .site-info {
-  height: 30px;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end; }
-
-.site-info p {
-  text-align: center;
-  text-transform: uppercase; }
+          align-items: flex-end;
+  height: 30px;
+  padding-top: 40px; }
+  .site-info p {
+    text-align: center;
+    text-transform: uppercase; }
 
 body .blog .entry-title-about {
   font-size: 48px;
