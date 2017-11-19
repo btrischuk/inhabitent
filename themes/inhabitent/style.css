@@ -370,9 +370,13 @@ input[type="submit"] {
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
+    background-color: #248A83;
+    border: none; }
+    button:hover a,
+    input[type="button"]:hover a,
+    input[type="reset"]:hover a,
+    input[type="submit"]:hover a {
+      color: #fff; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -856,16 +860,16 @@ object {
     bottom: -75px;
     background-color: #248A83;
     color: #fff; }
-    .latest-adventures-content .more-adventure-button .more-adventure-button:hover {
-      background-color: #248A83; }
+    .latest-adventures-content .more-adventure-button :hover {
+      background-color: #21759b; }
 
 .canoe {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/canoe-girl.jpg) center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/adventure-photos/canoe-girl.jpg) center no-repeat;
   background-size: cover;
+  position: relative;
   grid-column: 1/3;
   grid-row: 1/3;
-  position: relative;
   height: 500px; }
   .canoe h3 {
     color: #fff;
@@ -896,9 +900,9 @@ object {
     padding: 0 50px; }
   .beach button {
     position: absolute;
+    background-color: transparent;
     bottom: 30px;
     left: 50px;
-    background-color: transparent;
     border: 1px solid #fff;
     color: #fff; }
 
@@ -916,9 +920,9 @@ object {
     padding: 0 40px; }
   .mountain button {
     position: absolute;
+    background-color: transparent;
     bottom: 80px;
     left: 40px;
-    background-color: transparent;
     border: 1px solid #fff;
     color: #fff; }
 
@@ -926,9 +930,9 @@ object {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/night-sky.jpg) center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/adventure-photos/night-sky.jpg) center no-repeat;
   background-size: cover;
+  position: relative;
   grid-column: 4/5;
   grid-row: 2;
-  position: relative;
   height: 240px; }
   .gazing h3 {
     color: #fff;
@@ -937,9 +941,9 @@ object {
     padding: 0 40px; }
   .gazing button {
     position: absolute;
+    background-color: transparent;
     bottom: 80px;
     left: 40px;
-    background-color: transparent;
     border: 1px solid #fff;
     color: #fff; }
 
@@ -972,7 +976,9 @@ object {
   padding-right: 1rem; }
 
 .page-template .about-header-container {
+  position: relative;
   height: 100vh;
+  width: 100vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -981,6 +987,33 @@ object {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto; }
+  .page-template .about-header-container h1 {
+    position: absolute;
+    color: #fff;
+    font-size: 48px;
+    top: 50%;
+    left: 50%; }
+
+.about-entry-content {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80vw; }
+  .about-entry-content h2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 footer {
   background: url(../../images/dark-wood@2x.png) center no-repeat;
