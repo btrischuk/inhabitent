@@ -28,12 +28,17 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="logo-container">
-						<div class="logo">
-						<i class="fa fa-search" aria-hidden="true"></i>
+						<a href="http://localhost:3000/inhabitent/"><div class="logo"></a>
 						</div>
+
 					</div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					
+					<div class="search-bar">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</div>
+
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

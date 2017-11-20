@@ -1,4 +1,4 @@
-body .blog {
+body.blog {
   .entry-title-about {
     font-size: 48px;
     color: $color__background-body;
@@ -35,8 +35,10 @@ body .blog {
   }
   
   .entry-header  {
+    position: relative;
     height: auto;
-    // width: 40%;
+    width: 640px;    
+    margin: 10px 100px 10px 50px;
   }
   
   .entry-meta {
@@ -44,8 +46,8 @@ body .blog {
     background-color: $color__brand-green;
     color: $color__background-body;
     bottom: 0px;
-    right: 0px;
+    left: 327px;
     padding: 10px;
   }
   
-    }
+}

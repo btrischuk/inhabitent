@@ -25,9 +25,9 @@ a {
 }
 
 /* Menus */
-// #menu-item-69 {
-// 	color:blue;
-// }
+
+
+// Banner Menu
 
 .logo {
   background:
@@ -36,7 +36,7 @@ a {
   background-size: 50px 33px;
   height: 100px;
   width: 100px;
-  left: 10px;
+  left: 50px;
   top: 10px;
 }
 
@@ -46,18 +46,16 @@ a {
 }
 
 .main-navigation {
+	
 	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
 	display: flex;
 	justify-content: flex-end;
-  border-bottom: 0;
   position: fixed;
 	background-color: $color__background-header;  
 	border-bottom: $color__border;
 	z-index: 3;
-	
+	width: 100%;
 	
 
 	ul {
@@ -92,42 +90,46 @@ a {
 				padding-left: 1.5rem;
 			}
 
-			:hover > a,
-			.focus > a {
-			}
+			// :hover > a,
+			// .focus > a {
+			// }
 
-			a:hover,
-			a.focus {
-			}
-		}
+		// 	a:hover,
+		// 	a.focus {
+		// 	}
+		// }
 
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
 		}
 	}
+
 	li {
 		float: left;
 		position: relative;
 		text-transform: uppercase;
-
-		
 
 		&:hover > a,
 		&.focus > a {
 			color: $color__brand-purple;
 		}
 	}
+
 	a {
 		display: block;
 		text-decoration: none;
 		color: $color__brand-green;
 	}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
+// 	.current_page_item > a,
+// 	.current-menu-item > a,
+// 	.current_page_ancestor > a {
+// 	}
 	}
+}	
+.search-bar {
+	padding: 13px 40px 0 0;
 }
 
 /* Small menu. */
@@ -165,3 +167,4 @@ a {
 		width: 50%;
 	}
 }
+

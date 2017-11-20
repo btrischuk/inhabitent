@@ -33,8 +33,8 @@
 					</div>
 
 					<div class="footer-block-item">
-						<div class="footer-logo" title="logo">
-						</div>
+					<a href="http://localhost:3000/inhabitent/"><div class="footer-logo" title="logo">
+						</div></a>
 					</div>
 				</div>
 

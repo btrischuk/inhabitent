@@ -439,7 +439,7 @@ a {
   background-size: 50px 33px;
   height: 100px;
   width: 100px;
-  left: 10px;
+  left: 50px;
   top: 10px; }
 
 .main-navigation a {
@@ -449,19 +449,17 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  border-bottom: 0;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
-  z-index: 3; }
+  z-index: 3;
+  width: 100%; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -487,20 +485,23 @@ a {
       .main-navigation ul ul a {
         width: 200px;
         padding-left: 1.5rem; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative;
-    text-transform: uppercase; }
-    .main-navigation li:hover > a,
-    .main-navigation li.focus > a {
-      color: #2f1339; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none;
-    color: #248A83; }
+      .main-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li.focus > ul {
+        left: auto; }
+    .main-navigation ul li {
+      float: left;
+      position: relative;
+      text-transform: uppercase; }
+      .main-navigation ul li:hover > a,
+      .main-navigation ul li.focus > a {
+        color: #2f1339; }
+    .main-navigation ul a {
+      display: block;
+      text-decoration: none;
+      color: #248A83; }
+
+.search-bar {
+  padding: 13px 40px 0 0; }
 
 /* Small menu. */
 .menu-toggle,
@@ -608,6 +609,34 @@ a {
   .widget.widget_archive li ul {
     padding: 0;
     margin: 0; }
+
+.widget-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  padding-top: 50px;
+  border-left: 1px solid #e1e1e1; }
+
+.widget-area a {
+  color: #248A83; }
+
+.textwidget span {
+  font-weight: bold; }
+
+.fa-phone:before, .fa-envelope:before, .fa-map-marker:before {
+  color: black;
+  padding-right: 1rem; }
 
 /*--------------------------------------------------------------
 # Content
@@ -858,12 +887,12 @@ object {
 
 .front-journal-posts {
   border: 1px solid #e1e1e1;
-  margin: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative; }
+  position: relative;
+  margin: 20px; }
 
 .latest-adventures-wrapper {
   display: -webkit-box;
@@ -875,19 +904,19 @@ object {
           flex-direction: column; }
 
 .latest-adventures-content {
+  position: relative;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   width: 1120px;
   height: 500px;
-  margin: 0 auto;
-  position: relative; }
+  margin: 0 auto; }
   .latest-adventures-content .more-adventure-button {
     position: absolute;
-    bottom: -75px;
     background-color: #248A83;
-    color: #fff; }
+    color: #fff;
+    bottom: -75px; }
     .latest-adventures-content .more-adventure-button :hover {
       background-color: #21759b; }
 
@@ -906,20 +935,18 @@ object {
     font-weight: 300; }
   .canoe button {
     position: absolute;
-    bottom: 210px;
-    left: 30px;
     background-color: transparent;
     border: 1px solid #fff;
-    color: #fff; }
-    .canoe button :hover {
-      background-color: blue; }
+    color: #fff;
+    bottom: 210px;
+    left: 30px; }
 
 .beach {
+  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/beach-bonfire.jpg) center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/adventure-photos/beach-bonfire.jpg) center no-repeat;
   background-size: cover;
   grid-column: 3/5;
-  position: relative;
   height: 240px; }
   .beach h3 {
     color: #fff;
@@ -929,17 +956,17 @@ object {
   .beach button {
     position: absolute;
     background-color: transparent;
-    bottom: 30px;
-    left: 50px;
     border: 1px solid #fff;
-    color: #fff; }
+    color: #fff;
+    bottom: 30px;
+    left: 50px; }
 
 .mountain {
+  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/mountain-hikers.jpg) center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../images/adventure-photos/mountain-hikers.jpg) center no-repeat;
   background-size: cover;
   grid-column: 3/4;
-  position: relative;
   height: 240px; }
   .mountain h3 {
     color: #fff;
@@ -975,38 +1002,8 @@ object {
     border: 1px solid #fff;
     color: #fff; }
 
-.widget-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 40%;
-  padding-top: 50px;
-  border-left: 1px solid #e1e1e1; }
-
-.widget-area a {
-  color: #248A83; }
-
-.textwidget span {
-  font-weight: bold; }
-
-.fa-phone:before, .fa-envelope:before, .fa-map-marker:before {
-  color: black;
-  padding-right: 1rem; }
-
 .page-template .about-header-container {
   position: relative;
-  height: 100vh;
-  width: 100vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1014,7 +1011,9 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100vh;
+  width: 100vw; }
   .page-template .about-header-container h1 {
     position: absolute;
     color: #fff;
@@ -1034,14 +1033,16 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80vw; }
-  .about-entry-content h3 {
+  width: 50vw;
+  padding: 65px 0; }
+  .about-entry-content h3, .about-entry-content h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    font-size: 35px; }
 
 footer {
   background: url(../../images/dark-wood@2x.png) center no-repeat;
@@ -1117,11 +1118,11 @@ footer p {
     text-align: center;
     text-transform: uppercase; }
 
-body .blog .entry-title-about {
+body.blog .entry-title-about {
   font-size: 48px;
   color: #fff; }
 
-body .blog .page-template-about .entry-header {
+body.blog .page-template-about .entry-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1134,7 +1135,7 @@ body .blog .page-template-about .entry-header {
   width: 100vw;
   height: 100vh; }
 
-body .blog .entry-title {
+body.blog .entry-title {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -1144,7 +1145,7 @@ body .blog .entry-title {
   margin-top: 30px;
   padding: 15px; }
 
-body .blog .entry-header {
+body.blog .entry-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1153,18 +1154,21 @@ body .blog .entry-header {
           align-items: center;
   position: relative;
   align-items: center; }
-  body .blog .entry-header h2 {
+  body.blog .entry-header h2 {
     color: white; }
 
-body .blog .entry-header {
-  height: auto; }
+body.blog .entry-header {
+  position: relative;
+  height: auto;
+  width: 640px;
+  margin: 10px 100px 10px 50px; }
 
-body .blog .entry-meta {
+body.blog .entry-meta {
   position: absolute;
   background-color: #248A83;
   color: #fff;
   bottom: 0px;
-  right: 0px;
+  left: 327px;
   padding: 10px; }
 
 body:not(.home):not(.about):not(.post-type-archive):not(.tax-product-type):not(.single-product) .content-area {

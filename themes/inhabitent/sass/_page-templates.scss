@@ -96,7 +96,8 @@
   } 
 }
 
-// journal front page
+// Journal Front Page
+
 .front-container-content {
   display: flex;
   flex-direction: column;
@@ -105,7 +106,6 @@
 
 .journal-header {
   display: flex;
-  // color: blue;
   justify-content: center;
   text-transform: uppercase;
   padding-top: 30px;
@@ -136,19 +136,20 @@
 
 .front-journal-posts  {
   border: $color__border;
-  margin: 20px;
-  // display: flex;
   flex-direction: column;
   position: relative;
+  margin: 20px;  
 }
 
 //Latest Adventures
+
 .latest-adventures-wrapper {
   display: flex;
   flex-direction: column;
 }
 
 .latest-adventures-content {
+  position: relative;  
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-column-gap: 20px;
@@ -156,12 +157,11 @@
   width: 1120px;
   height: 500px;
   margin: 0 auto;
-  position: relative;
   .more-adventure-button {
     position: absolute;
-    bottom: -75px;
     background-color: $color__brand-green;
     color: $color__background-body;
+    bottom: -75px;
     :hover {
       background-color: $color__text-screen;
     }
@@ -186,25 +186,25 @@
   }
   button {
     position: absolute;
-    bottom: 210px;
-    left: 30px;
     background-color: transparent;
     border: $color__white-border;
     color: $color__background-body;
-    :hover{
-      background-color: blue;
-    }
+    bottom: 210px;
+    left: 30px;
+    // :hover{
+    //   background-color: blue;
+    // }
   }
 }
 
 .beach {
+  position: relative;  
   background:
   linear-gradient(
     rgba(0,0,0, 0.3),
     rgba(0,0,0,0.3)), url(../../images/adventure-photos/beach-bonfire.jpg) center no-repeat;
   background-size: cover;
   grid-column: 3/5;  
-  position: relative;
   height: 240px;;
   h3 {
     color: $color__background-body;
@@ -215,21 +215,21 @@
   button {
     position: absolute;
     background-color: transparent;    
-    bottom: 30px;
-    left: 50px;
     border: $color__white-border;
     color: $color__background-body;
+    bottom: 30px;
+    left: 50px;
   }
 }
 
 .mountain {
+  position: relative;  
   background:
   linear-gradient(
     rgba(0,0,0, 0.3),
     rgba(0,0,0,0.3)), url(../../images/adventure-photos/mountain-hikers.jpg) center no-repeat;
   background-size: cover;
   grid-column: 3/4;  
-  position: relative;
   height: 240px;
   
   h3 {
@@ -275,42 +275,16 @@
   }
 }
 
-
-
-//widget 
-.widget-area {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  align-items: center;
-  width: 40%;
-  padding-top: 50px;
-  border-left: $color__border;
-}
-
-.widget-area  a {
-  color: $color__brand-green;
-}
-
-.textwidget span {
-  font-weight: bold;
-}
-
-.fa-phone:before, .fa-envelope:before, .fa-map-marker:before {
-  color: black;
-  padding-right: 1rem;
-}
-
 //about 
 
 .page-template .about-header-container {
   // display: flex;
   position: relative;
-  height: 100vh;
-  width: 100vw;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  height: 100vh;
+  width: 100vw;
   h1 {
     position: absolute;
     color: $color__background-body;
@@ -325,10 +299,11 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 80vw;
-  h3 {
+  width: 50vw;
+  padding: 65px 0;  
+  h3, h2 {
     justify-content: center;
     display: flex;
-
+    font-size: 35px;
   }
 }
