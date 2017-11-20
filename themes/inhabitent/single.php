@@ -11,7 +11,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+	<div class="testing">
+			<?php 
+			get_template_part( 'template-parts/content', 'single' ); 
+			?>
 
 			<?php the_post_navigation(); ?>
 			<?php
@@ -20,7 +23,7 @@ get_header(); ?>
 					comments_template();
 				endif;
 			?>
-	
+	</div>
 		<?php endwhile; // End of the loop. ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->

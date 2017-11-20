@@ -87,3 +87,14 @@ table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
 }
+
+//single page
+
+.single {
+	img{
+		width: 540px;
+	}
+	.site-content {
+		height: 100vh;
+	}
+}
