@@ -54,10 +54,10 @@ get_header(); ?>
 
 					<li class="shop-item">
 
-						<?php
-						 the_post_thumbnail( 'large' ); 
-							// the_archive_description( '<div class="taxonomy-description">', '</div>' );
-						?>
+
+
+					<a href="<?php echo the_permalink()?>"><?php the_post_thumbnail('medium');?></a>
+
 						
 						<?php 
 						the_title( sprintf( '<h2 class="entry-title">', esc_url( get_template_part( get_permalink()) ) ),'......', '</h2>' ) ;
@@ -67,7 +67,7 @@ get_header(); ?>
 
 
 						<?php	
-						get_template_part( 'template-parts/content' ); 
+						// get_template_part( 'template-parts/content' ); 
 						?>
 													
 

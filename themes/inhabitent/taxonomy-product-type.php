@@ -22,17 +22,25 @@ get_header(); ?>
 				
 
 				<?php
-      		$terms = get_terms( array(the_archive_title( before, after ) ) );
+      		// $terms = get_terms( array(the_archive_title( before, after ) ) );
 
-					if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :?>
+					if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
+					?>
 
     		<div class="product-type-blocks">
 
-      		<?php foreach ( $terms as $term ) : ?>
-						<!-- <div class="product-link-container"> -->
-        		<p class="shop-product-link"><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> YAYYY</a></p>
-				<!-- </div> -->
-			
+
+					<?php foreach ( $terms as $term ) : ?>
+					
+					
+						<!-- <div class="product-link-container">
+						<p class="shop-product-link"><a href="<?php 
+						// echo get_term_link( $term ); 
+						?>" class="btn"><?php 
+						// echo $term->name; 
+						?> YAYYY</a></p>
+				</div> -->
+
       	<?php endforeach; ?>
 
 				 <?php endif; ?>
@@ -43,13 +51,13 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<div class="taxonomy-product-container">
-				<?php
-					get_template_part( 'template-parts/content' );
+		
+				<a href="<?php echo the_permalink()?>"><?php the_post_thumbnail('medium');?></a>
+
+				<?php 
+					the_title( sprintf( '<h2 class="entry-title">', esc_url( get_template_part( get_permalink()) ) ),'......', '</h2>' ) ;
 				?>
-					<?php 
-						the_title( sprintf( '<h2 class="entry-title">', esc_url( get_template_part( get_permalink()) ) ),'......', '</h2>' ) ;
-						?>
-						<?php echo CFS() ->get (price) ?>
+				<?php echo CFS() ->get (price) ?>
 
 			</div>
 
