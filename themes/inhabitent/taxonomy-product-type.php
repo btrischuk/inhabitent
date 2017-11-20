@@ -13,28 +13,39 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-
+			</header><!-- .page-header -->
         <?php
         
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h1 class="page-title">', '</h1>' ); 
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
         ?>
-			</header><!-- .page-header -->
-
+			
+	<div class="taxonomy-wrapper">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-<div>
+
+			<div class="taxonomy-product-container">
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
-</div>
-			<?php endwhile; ?>
+					<?php 
+						the_title( sprintf( '<h2 class="entry-title">', esc_url( get_template_part( get_permalink()) ) ),'......', '</h2>' ) ;
+						?>
+						<?php echo CFS() ->get (price) ?>
 
-			<?php the_posts_navigation(); ?>
+			</div>
+
+			<?php endwhile; ?>
+</div>
+			<?php
+			 the_posts_navigation(); 
+			 ?>
 
 		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+			<?php 
+			get_template_part( 'template-parts/content', 'none' ); 
+			?>
 
 		<?php endif; ?>
 
