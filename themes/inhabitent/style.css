@@ -1233,7 +1233,7 @@ body.blog .entry-meta {
   left: 426px;
   padding: 10px; }
 
-body:not(.home):not(.about):not(.post-type-archive):not(.tax-product-type) .content-area {
+body:not(.home):not(.about):not(.post-type-archive):not(.tax-product-type):not(.single-product) .content-area {
   width: 70%;
   padding-top: 85px; }
 
@@ -1328,23 +1328,46 @@ archive.product.entry-header {
 
 .single-product .site-content {
   margin: 0 auto;
-  width: 1120px; }
+  width: 1120px;
+  min-height: 73vh; }
   .single-product .site-content .entry-title {
     border: none; }
   .single-product .site-content .entry-footer {
     display: none; }
+  .single-product .site-content .content-area {
+    padding-top: 85px;
+    width: 1120px; }
   .single-product .site-content .entry-content p {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 53%;
     margin: 0 auto;
-    width: 560px; }
+    width: 500px; }
+  .single-product .site-content .single-product-social {
+    position: absolute;
+    right: 24%;
+    top: 57%; }
+    .single-product .site-content .single-product-social span {
+      padding-left: 10px; }
+    .single-product .site-content .single-product-social button {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      position: unset;
+      text-shadow: none; }
+      .single-product .site-content .single-product-social button a {
+        color: #000;
+        text-decoration: none; }
+    .single-product .site-content .single-product-social button :hover {
+      color: white; }
+  .single-product .site-content .product {
+    border: none; }
   .single-product .site-content .entry-header h1 {
     color: #d99054;
     position: absolute;
-    top: 24%;
+    top: 14%;
     left: 53%; }
   .single-product .site-content .entry-header .entry-meta {
     position: absolute;
-    top: 42%;
+    top: 25%;
     left: 53%; }
