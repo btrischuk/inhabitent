@@ -32,6 +32,7 @@ body:not(.product-template-default) .entry-content {
   width: 250px;
   height: 250px;
   object-fit: contain;
+  border: $color__border;
 }
 
 .archive .product-type-blocks{
@@ -48,28 +49,46 @@ body:not(.product-template-default) .entry-content {
   }
 }
 
-archive .product .entry-header {
+.archive .site-main{
+  padding-top: 5rem;
+  .taxonomy-description, h1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+archive.product.entry-header {
   width: 600px;
   margin-top: 300px;
 }
 .taxonomy-wrapper {
   display: flex;
   justify-content: space-around;
-  height: 100vh;
-  width: 1120px
+  // height: 100vh;
+  // width: 1120px
 }
 
 .taxonomy-product-container {
-  max-width: 250px;
+  // max-width: 250px;
   position: relative;
 }
 
 .archive .entry-header img {
-    width: 250px;
+    width: 100%;
     position: absolute;
-    margin: 40px;
-    // grid-column: 1/-1; 
+    width: 246px;
+    height: 247px;
+    transform: translate(-50%,-52%);
+    position: relative;
+    top: 130px;
+    left: 124px;
+
   }
+
+.entry-title {
+  border: $color__border;
+  border-top-width: 5px;
+}
 
 
 

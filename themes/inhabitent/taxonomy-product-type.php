@@ -18,7 +18,25 @@ get_header(); ?>
         
 					the_archive_title( '<h1 class="page-title">', '</h1>' ); 
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-        ?>
+				?>
+				
+
+				<?php
+      		$terms = get_terms( array(the_archive_title( before, after ) ) );
+
+					if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :?>
+
+    		<div class="product-type-blocks">
+
+      		<?php foreach ( $terms as $term ) : ?>
+						<!-- <div class="product-link-container"> -->
+        		<p class="shop-product-link"><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> YAYYY</a></p>
+				<!-- </div> -->
+			
+      	<?php endforeach; ?>
+
+				 <?php endif; ?>
+				 
 			
 	<div class="taxonomy-wrapper">
 			<?php /* Start the Loop */ ?>
