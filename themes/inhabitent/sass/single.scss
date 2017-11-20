@@ -1,0 +1,39 @@
+.single-product .site-content {
+  margin: 0 auto;
+  width: 1120px;
+  .entry-title {
+    border: none;
+  }
+  .entry-footer {
+    display: none;
+  }
+  .entry-content p {
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    margin: 0 auto;
+    width: 560px;
+  }
+  .entry-header {
+    h1 {
+      color: $color__brand-orange;
+    position: absolute;
+    top:24%;
+    left: 53%;
+  }
+    .entry-meta {
+      position: absolute;
+      top: 42%;
+      left: 53%;
+    }
+  }
+
+}
+// .single .site-area {
+//   color: green;
+//   z-index: 3;
+// }
+
+// .single footer {
+// }
+

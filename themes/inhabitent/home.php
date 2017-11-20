@@ -23,6 +23,8 @@ get_header(); ?>
 			
 
 			<?php get_template_part( 'template-parts/content' ); ?>
+			
+<button> hello </button>
 
 			<?php endwhile; ?>
 
