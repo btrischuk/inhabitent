@@ -47,28 +47,20 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			
-
 			<div class="shop-item-container">
 				<ul>
 					<?php while ( have_posts() ) : the_post(); ?>
 
 					<li class="shop-item">
 
+						<a href="<?php echo the_permalink()?>"><?php the_post_thumbnail('medium');?></a>
 
+							<?php 
+								the_title( sprintf( '<h2 class="entry-title">', esc_url( get_template_part( get_permalink()) ) ),'......', '</h2>' ) ;
+							?>
 
-					<a href="<?php echo the_permalink()?>"><?php the_post_thumbnail('medium');?></a>
-
-						
-						<?php 
-						the_title( sprintf( '<h2 class="entry-title">', esc_url( get_template_part( get_permalink()) ) ),'......', '</h2>' ) ;
-						?>
-
-						<?php echo CFS() ->get (price) ?>
-
-						<?php	
-						// get_template_part( 'template-parts/content' ); 
-						?>
-													
+							<?php echo CFS() ->get (price) ?>
+														
 					</li>
 
 					<?php endwhile; ?>

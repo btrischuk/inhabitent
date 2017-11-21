@@ -29,16 +29,13 @@
       padding-left: 10px;
     }
     
-    
     button {
       justify-content: flex-end;
-      // margin-right: 154px;
       position: unset;
       text-shadow: none;
       a {
         color: $color__black;
-        text-decoration: none;
-        
+        text-decoration: none; 
       }
     }
     button :hover {

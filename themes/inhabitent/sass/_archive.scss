@@ -11,8 +11,8 @@
 .shop-item-container {
   ul{
   display: grid;
+  list-style-type: none;  
   grid-template-columns: 25% 25% 25% 25%;
-  list-style-type: none;
   padding: 40px 230px 0;
   li {
     text-decoration: none;
@@ -30,18 +30,14 @@
   }
 }
 
-body:not(.product-template-default) .entry-content {
-  // display: none;
-}
-
 .product {
+  object-fit: contain;  
   width: 250px;
   height: 250px;
-  object-fit: contain;
   border: $color__border;
 }
 
-.archive .product-type-blocks{
+.archive .product-type-blocks {
   display: flex;
   justify-content: center;
   border-bottom: $color__border-dashed;
@@ -63,7 +59,6 @@ body:not(.product-template-default) .entry-content {
   }
   h1 {
     text-transform: uppercase;
-    
   }
 }
 
@@ -75,26 +70,22 @@ archive.product.entry-header {
   display: flex;
   justify-content: space-around;
   margin-bottom: 10rem;
-  // height: 100vh;
-  // width: 1120px
 }
 
 .taxonomy-product-container {
-  // max-width: 250px;
   position: relative;
 }
 
 .archive .entry-header img {
-    width: 100%;
-    position: absolute;
-    width: 246px;
-    height: 247px;
-    transform: translate(-50%,-52%);
-    position: relative;
-    top: 130px;
-    left: 124px;
-
-  }
+  position: absolute;
+  position: relative; 
+  width: 100%;
+  width: 246px;
+  height: 247px;
+  transform: translate(-50%,-52%);
+  top: 130px;
+  left: 124px;
+}
 
 .entry-title {
   border: $color__border;
@@ -102,15 +93,6 @@ archive.product.entry-header {
   font-size: 16px;
   margin-top: 0;  
 }
-
-
-// body:not()
-// .entry-header img {
-//   width: 640px;
-//   height: 440px;
-// }
-
-
 
 //category-by-month page
 body.archive.date{
@@ -133,9 +115,9 @@ body.archive.date{
       height: 520px;
     }
     img {
+      position: relative;      
       width: 100%;
       height: 100%;
-      position: relative;
       top: 17rem;
       left: 23.5rem;
     }
@@ -158,10 +140,10 @@ body.archive.date{
     left: 0px;
     top: 0px;
     width: 450px;
+    padding: 15px;
+    margin-top: 30px;    
     background-color: $color__brand-green;
     color: $color__background-body;
-    margin-top: 30px;
-    padding: 15px;
   }
   
   .entry-header {
@@ -192,20 +174,18 @@ body.archive.date{
   }
 }
 
-
 // find us page
 
 body.page {
   .entry-content {
-    margin: 20rem;
-    background-color: blue;
+    margin: 5rem;
   }
 }
 
-body.page.find-us-content-area {
-  background-color: blue;
-  }
-  body.page.find-us-content-area {
-    position: relative;
-    background-color: blue;
-  }
+// body.page.find-us-content-area {
+//   background-color: blue;
+//   }
+//   body.page.find-us-content-area {
+//     position: relative;
+//     background-color: blue;
+//   }

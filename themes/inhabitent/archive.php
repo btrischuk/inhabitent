@@ -12,7 +12,7 @@ get_header(); ?>
         <main id="main" class="site-main" role="main">
         <?php if ( have_posts() ) : ?>
             <header class="page-header">
-						<h1 class="archive-month-header"><?php echo get_the_archive_title(); ?></h1>
+			    <h1 class="archive-month-header"><?php echo get_the_archive_title(); ?></h1>
 
             </header><!-- .page-header -->
         

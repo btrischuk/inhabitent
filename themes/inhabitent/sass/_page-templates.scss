@@ -5,20 +5,9 @@
 /* Front page */
 
 .home h2 {
-  font-size: 40px;
   display: flex;
   justify-content: center;
-}
-
-.hero {
-  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),
-  url(../../images/home-hero.jpg);  
-  display: flex;  
-  background-size: cover;
-  justify-content: center;
-  align-content: center;
-  width: 100vw;
-  height: 100vh;
+  font-size: 40px;  
 }
 
 .front-center-logo-wrapper{
@@ -74,10 +63,10 @@
 
   }
   img {
+    display: flex;    
+    margin: 0 auto;    
     width: 70px;
     height: 70px;
-    margin: 0 auto;
-    display: flex;
   }
 }
 .product-type-block-wrapper:hover {
@@ -151,12 +140,12 @@
 .latest-adventures-content {
   position: relative;  
   display: grid;
+  margin: 0 auto;  
   grid-template-columns: 25% 25% 25% 25%;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   width: 1120px;
   height: 500px;
-  margin: 0 auto;
   .more-adventure-button {
     position: absolute;
     background-color: $color__brand-green;
@@ -191,9 +180,6 @@
     color: $color__background-body;
     bottom: 210px;
     left: 30px;
-    // :hover{
-    //   background-color: blue;
-    // }
   }
 }
 
@@ -278,7 +264,6 @@
 //about 
 
 .page-template .about-header-container {
-  // display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -287,11 +272,11 @@
   width: 100vw;
   h1 {
     position: absolute;
+    text-transform: uppercase;    
     color: $color__background-body;
     font-size: 48px;
     top: 39%;
     left: 45%;
-    text-transform: uppercase;
   }
 }
 
@@ -308,4 +293,3 @@
     font-size: 35px;
   }
 }
-

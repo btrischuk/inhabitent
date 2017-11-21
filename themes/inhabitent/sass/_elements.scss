@@ -62,26 +62,15 @@ dd {
 img {
 	height: auto; /* Make sure images are scaled correctly. */
 	// width: 100%; /* Adhere to container width. */
-	// position: absolute;
 }
 
 .front-page-thumbnail {
 	width: auto;
 }
 
-// .journal-content-area {
-// 	width: 70%;
-// 	padding-right: 40px;
-// 	padding-left: 30px;
-// }
-
 main .site-main {
 	padding-left: 30px;
 }
-
-// img:nth-child(1){
-// 	padding-top: 30px;
-// }
 
 table {
 	margin: 0 0 $base__space-unit;
