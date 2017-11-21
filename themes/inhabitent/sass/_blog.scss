@@ -22,7 +22,7 @@ body.blog {
   }
 
   .entry-content p {
-    margin: 0 10rem 0 3rem;
+    margin: 0 10rem 5rem 3rem;
   }
   
   .entry-title {
@@ -30,7 +30,6 @@ body.blog {
     left: 0px;
     top: 0px;
     width: 450px;
-    // top: 185px;
     background-color: $color__brand-green;
     color: $color__background-body;
     margin-top: 30px;
@@ -63,5 +62,4 @@ body.blog {
     left: 426px;
     padding: 10px;
   }
-  
 }

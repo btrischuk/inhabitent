@@ -44,11 +44,6 @@
     button :hover {
       color: white;
     }
-  
-    // display: flex;
-    // a {
-    //   justify-content: space-around;
-    // }
   }
 
   .product {
@@ -62,19 +57,9 @@
     top:14%;
     left: 53%;
   }
-    .entry-meta {
-      position: absolute;
-      top: 25%;
-      left: 53%;
+    .entry-meta { 
+      display: none;
     }
   }
-
 }
-// .single .site-area {
-//   color: green;
-//   z-index: 3;
-// }
-
-// .single footer {
-// }
 

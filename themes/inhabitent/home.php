@@ -23,8 +23,11 @@ get_header(); ?>
 			
 
 			<?php get_template_part( 'template-parts/content' ); ?>
-			
-<button> hello </button>
+				<div class="journal-content-button">
+					<?php 
+					// echo get_the_permalink()
+					?> <button> read more </button>
+				</div> 
 
 			<?php endwhile; ?>
 

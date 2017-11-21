@@ -13,14 +13,20 @@
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   list-style-type: none;
-  padding-top: 40px;
+  padding: 40px 230px 0;
+  li {
+    text-decoration: none;
+    width: 200px;
+    border: $color__border;
+  }
   img {
     width: 200px;
     height: 200px;
-  li {
-    text-decoration: none;
+    padding-top: 20px;
   }
   }
+  h2 .shop-item {
+    width: 200px; 
   }
 }
 
@@ -55,6 +61,10 @@ body:not(.product-template-default) .entry-content {
     display: flex;
     justify-content: center;
   }
+  h1 {
+    text-transform: uppercase;
+    
+  }
 }
 
 archive.product.entry-header {
@@ -64,6 +74,7 @@ archive.product.entry-header {
 .taxonomy-wrapper {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 10rem;
   // height: 100vh;
   // width: 1120px
 }
@@ -88,8 +99,9 @@ archive.product.entry-header {
 .entry-title {
   border: $color__border;
   border-top-width: 5px;
+  font-size: 16px;
+  margin-top: 0;  
 }
-
 
 
 // body:not()
@@ -97,3 +109,85 @@ archive.product.entry-header {
 //   width: 640px;
 //   height: 440px;
 // }
+
+
+
+//category-by-month page
+body.archive {
+  .archive-month-header {
+    justify-content: left;
+    border-bottom: $color__border;
+    padding-bottom: 3rem;
+  }
+  article .post {
+    margin-left: 10rem;
+  }
+  .entry-title-about {
+    font-size: 48px;
+    color: $color__background-body;
+  }
+  .content-area {
+    margin-left: 7rem;
+    .entry-header {
+      width: auto;
+      height: 520px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: 17rem;
+      left: 23.5rem;
+    }
+  }
+  
+  .page-template-about .entry-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .entry-content p {
+    margin: 0 10rem 5rem 3rem;
+  }
+  
+  .entry-title {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 450px;
+    background-color: $color__brand-green;
+    color: $color__background-body;
+    margin-top: 30px;
+    padding: 15px;
+  }
+  
+  .entry-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-items: center;
+    h2 {
+      color: white;
+      border: none;
+    }
+  }
+  
+  .entry-header  {
+    position: relative;
+    height: auto;
+    width: 640px;    
+    margin: 10px 100px 10px 50px;
+  }
+  
+  .entry-meta {
+    position: absolute;
+    background-color: $color__brand-green;
+    color: $color__background-body;
+    bottom: 0px;
+    left: 426px;
+    padding: 10px;
+  }
+}
