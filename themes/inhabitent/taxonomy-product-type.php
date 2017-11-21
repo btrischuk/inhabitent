@@ -26,7 +26,6 @@ get_header(); ?>
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 				
-
 				<?php
       		// $terms = get_terms( array(the_archive_title( before, after ) ) );
 
@@ -35,9 +34,7 @@ get_header(); ?>
 
     		<div class="product-type-blocks">
 
-
 					<?php foreach ( $terms as $term ) : ?>
-					
 					
 						<!-- <div class="product-link-container">
 						<p class="shop-product-link"><a href="<?php 
