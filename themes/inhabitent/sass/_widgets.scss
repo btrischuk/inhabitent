@@ -32,11 +32,15 @@
   align-items: center;
   width: 25%;
   padding-top: 50px;
-  border-left: $color__border;
+	border-left: $color__border;
+	ul {
+		padding: 0;
+	}
 }
 
 .widget-area  a {
-  color: $color__brand-green;
+	color: $color__brand-green;
+	text-decoration: none;
 }
 
 .textwidget span {

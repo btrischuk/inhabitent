@@ -40,8 +40,48 @@ add_action( 'login_head', 'inhabitent_login_logo' );
 function inhabitent_login_url() {
 	return home_url();
 }
-
 add_filter('login_headerurl', 'inhabitent_login_url');
+
+
+// add_filter( 'get_the_archive_title', function( $title ) {
+// 	if(is_tax('product-type')){
+// 			// $title = 'Hello';
+// 			return $title;
+// 	}
+// });
+
+
+/**
+ * Modify the shop archive title
+ */
+function inhabitent_product_archive_title( $query ) {
+	if( $query ->is_main_query() && !is_admin() && is_post_type_archive( 'product')) {
+
+		$query->set('posts_per_page', '16');
+		add_filter( 'get_the_archive_title', function( $title ) {
+			$title = 'Shop Stuff';
+
+			return $title;
+		});
+		
+	}
+}
+//archive title
+add_action ('pre_get_posts', 'inhabitent_product_archive_title');
+
+
+
+
+
+//posts per page 
+// add_action ('pre_get_posts', 'inhabitent_product_archive_title');
+
+// function inhabitent_product_archive_title( $query ) {
+// 	if( $query ->is_main_query() && !is_admin() && is_post_type_archive( 'product')) {
+
+// 	}
+// }
+
 
 function inhabitent_logo_url_title(){
 	return 'inhabitent';

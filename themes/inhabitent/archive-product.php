@@ -15,7 +15,7 @@ get_header(); ?>
 
 			<header class="page-header">
 				<div class="shop-stuff-header-container">
-					<h1 class="shop-stuff-header">shop stuff</h1>
+					<h1 class="shop-stuff-header"><?php echo get_the_archive_title(); ?></h1>
 
 				</div>
 

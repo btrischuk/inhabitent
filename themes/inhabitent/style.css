@@ -234,7 +234,6 @@ th {
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather/Merriweather-Bold.eot");
   src: url("../../fonts/Merriweather/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather/Merriweather-Bold.ttf") format("truetype"), url("../../fonts/Merriweather/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
@@ -261,7 +260,7 @@ th {
   font-style: italic; }
 
 @font-face {
-  font-family: 'Merriweather';
+  font-family: 'Novecento';
   src: url("../../fonts/Novecento/Novecentosanswide-Normal.eot");
   src: url("../../fonts/Novecento/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/Novecentosanswide-Normal.woff2") format("woff2"), url("../../fonts/Novecento/Novecentosanswide-Normal.ttf") format("truetype"), url("../../fonts/Novecento/Novecentosanswide-Normal.svg#Merriweather-LightItalic") format("svg");
   font-weight: 300;
@@ -678,9 +677,12 @@ a {
   width: 25%;
   padding-top: 50px;
   border-left: 1px solid #e1e1e1; }
+  .widget-area ul {
+    padding: 0; }
 
 .widget-area a {
-  color: #248A83; }
+  color: #248A83;
+  text-decoration: none; }
 
 .textwidget span {
   font-weight: bold; }
@@ -1069,8 +1071,9 @@ object {
     position: absolute;
     color: #fff;
     font-size: 48px;
-    top: 50%;
-    left: 50%; }
+    top: 39%;
+    left: 45%;
+    text-transform: uppercase; }
 
 .about-entry-content {
   margin: 0 auto;
