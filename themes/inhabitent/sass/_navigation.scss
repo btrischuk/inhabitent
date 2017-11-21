@@ -51,16 +51,17 @@ a {
 }
 
 .main-navigation {
-	
 	clear: both;
 	display: block;
 	display: flex;
 	justify-content: flex-end;
   position: fixed;
-	background-color: $color__background-header;  
+	background-color: pink;  
 	border-bottom: $color__border;
 	z-index: 3;
 	width: 100%;
+	padding: 0 3rem;
+	
 	
 
 	ul {

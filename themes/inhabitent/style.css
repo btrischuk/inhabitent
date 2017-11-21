@@ -225,7 +225,7 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-@font-face {
+/* @font-face {
   font-family: 'Merriweather';
   src: url("../../fonts/Merriweather/Merriweather-BoldItalic.eot");
   src: url("../../fonts/Merriweather/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/Merriweather/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
@@ -264,7 +264,7 @@ th {
   src: url("../../fonts/Novecento/Novecentosanswide-Normal.eot");
   src: url("../../fonts/Novecento/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/Novecentosanswide-Normal.woff2") format("woff2"), url("../../fonts/Novecento/Novecentosanswide-Normal.ttf") format("truetype"), url("../../fonts/Novecento/Novecentosanswide-Normal.svg#Merriweather-LightItalic") format("svg");
   font-weight: 300;
-  font-style: italic; }
+  font-style: italic; } */
 
 /*--------------------------------------------------------------
 # Typography
@@ -1344,33 +1344,33 @@ archive.product.entry-header {
   font-size: 16px;
   margin-top: 0; }
 
-body.archive .archive-month-header {
+body.archive.date .archive-month-header {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
   border-bottom: 1px solid #e1e1e1;
   padding-bottom: 3rem; }
 
-body.archive article .post {
+body.archive.date article .post {
   margin-left: 10rem; }
 
-body.archive .entry-title-about {
+body.archive.date .entry-title-about {
   font-size: 48px;
   color: #fff; }
 
-body.archive .content-area {
+body.archive.date .content-area {
   margin-left: 7rem; }
-  body.archive .content-area .entry-header {
+  body.archive.date .content-area .entry-header {
     width: auto;
     height: 520px; }
-  body.archive .content-area img {
+  body.archive.date .content-area img {
     width: 100%;
     height: 100%;
     position: relative;
     top: 17rem;
     left: 23.5rem; }
 
-body.archive .page-template-about .entry-header {
+body.archive.date .page-template-about .entry-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1383,10 +1383,10 @@ body.archive .page-template-about .entry-header {
   width: 100vw;
   height: 100vh; }
 
-body.archive .entry-content p {
+body.archive.date .entry-content p {
   margin: 0 10rem 5rem 3rem; }
 
-body.archive .entry-title {
+body.archive.date .entry-title {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -1396,7 +1396,7 @@ body.archive .entry-title {
   margin-top: 30px;
   padding: 15px; }
 
-body.archive .entry-header {
+body.archive.date .entry-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1405,17 +1405,17 @@ body.archive .entry-header {
           align-items: center;
   position: relative;
   align-items: center; }
-  body.archive .entry-header h2 {
+  body.archive.date .entry-header h2 {
     color: white;
     border: none; }
 
-body.archive .entry-header {
+body.archive.date .entry-header {
   position: relative;
   height: auto;
   width: 640px;
   margin: 10px 100px 10px 50px; }
 
-body.archive .entry-meta {
+body.archive.date .entry-meta {
   position: absolute;
   background-color: #248A83;
   color: #fff;

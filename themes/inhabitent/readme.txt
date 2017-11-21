@@ -1,6 +1,45 @@
 === RED Starter Theme ===
 
-Contributors: automattic
+#Inhabitent
+
+![Screen Shot Inhabitent](images/screen-shot.png "Inhabitent")
+
+# Project 
+This is Multi-page website that is for a camping gear supply campany.  Built to resemble an example 
+
+# Learning Experience
+  This project required me to build of exsisting skills while learning many new ones.  It was very demanding in SASS, which allowed me to learn proper management and planning skills.  Throughout the duration of this project, I had many frustrations, most of them involved wordpress not responding to the changes in my code.  I still have a lot of fixes to do to this site and am driven to continue the struggle to make it perfect.
+
+# Technology
+
+* MAMP
+
+* HTML5
+
+* Gulp
+
+* CSS3/Sass/SCSS
+
+* PHP
+
+* WordPress
+
+* Git/Github
+
+# Learning Experience 
+
+## Contributors
+
+* wdp-fall-2017 classmates
+
+* RED Academy
+
+* Jim Bennett
+
+## Authors
+
+* Breckon Trischuk 
+
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 Requires at least: 4.0
