@@ -46,8 +46,7 @@ a {
 }
 
 .main-navigation a {
-  color:blue; 
-  padding: 1rem;
+	padding: 1rem;
 }
 
 .main-navigation {
@@ -56,12 +55,11 @@ a {
 	display: flex;
 	justify-content: flex-end;
   position: fixed;
-	// background-color: pink;  
+	background-color: $color__background-header;  
 	border-bottom: $color__border;
 	z-index: 3;
 	width: 100%;
-	padding: 0 3rem;
-	
+	padding-right: 10rem;
 
 	ul {
 		display: none;

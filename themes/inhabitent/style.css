@@ -225,46 +225,41 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-/* @font-face {
+@font-face {
   font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather/Merriweather-BoldItalic.eot");
-  src: url("../../fonts/Merriweather/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/Merriweather/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
+  src: url("../../fonts/Merriweather/Merriweather-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather/Merriweather-Bold.ttf") format("truetype"), url("../../fonts/Merriweather/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+  src: url("../../fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather/Merriweather-LightItalic.eot");
-  src: url("../../fonts/Merriweather/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype"), url("../../fonts/Merriweather/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  src: url("../../fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("../../fonts/Merriweather/Merriweather-Light.eot");
-  src: url("../../fonts/Merriweather/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather/Merriweather-Light.ttf") format("truetype"), url("../../fonts/Merriweather/Merriweather-Light.svg#Merriweather-Light") format("svg");
+  src: url("../../fonts/Merriweather/Merriweather-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../../fonts/Novecento/Novecentosanswide-Demibold.eot");
-  src: url("../../fonts/Novecento/Novecentosanswide-Demibold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/Novecentosanswide-Demibold.woff2") format("woff2"), url("../../fonts/Novecento/Novecentosanswide-Demibold.ttf") format("truetype"), url("../../fonts/Novecento/Novecentosanswide-Demibold.svg#Merriweather-BoldItalic") format("svg");
+  src: url("../../fonts/Novecento/Novecentosanswide-Demibold.ttf") format("truetype");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Novecento';
-  src: url("../../fonts/Novecento/Novecentosanswide-Normal.eot");
-  src: url("../../fonts/Novecento/Novecentosanswide-Normal.eot?#iefix") format("embedded-opentype"), url("../../fonts/Novecento/Novecentosanswide-Normal.woff2") format("woff2"), url("../../fonts/Novecento/Novecentosanswide-Normal.ttf") format("truetype"), url("../../fonts/Novecento/Novecentosanswide-Normal.svg#Merriweather-LightItalic") format("svg");
+  src: url("../../fonts/Novecento/Novecentosanswide-Normal.ttf") format("truetype");
   font-weight: 300;
-  font-style: italic; } */
+  font-style: italic; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -377,7 +372,7 @@ img {
   /* Make sure images are scaled correctly. */ }
 
 .front-page-thumbnail {
-  width: auto; }
+  width: 22rem; }
 
 main .site-main {
   padding-left: 30px; }
@@ -391,6 +386,9 @@ table {
 
 .single .site-content {
   min-height: 100vh; }
+
+.error404 .site-content {
+  background-color: blue; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -410,7 +408,7 @@ input[type="submit"] {
   padding: .75rem 1.5rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
-  position: absolute;
+  position: initial;
   bottom: .75rem;
   left: .75rem; }
   button:hover,
@@ -494,7 +492,6 @@ a {
   margin: 0 36px; }
 
 .main-navigation a {
-  color: white;
   padding: 1rem; }
 
 .main-navigation {
@@ -510,7 +507,8 @@ a {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
   z-index: 3;
-  width: 100%; }
+  width: 100%;
+  padding-right: 10rem; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -798,13 +796,13 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .home h2 {
-  font-size: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  font-size: 40px; }
 
 .hero {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../../images/home-hero.jpg);
@@ -819,7 +817,8 @@ object {
   -ms-flex-line-pack: center;
       align-content: center;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  font-size: 40px; }
 
 .front-center-logo-wrapper {
   display: -webkit-box;
@@ -837,6 +836,9 @@ object {
 
 .site-main-front-page {
   padding-bottom: 100px; }
+
+.post-type-archive .taxonomy-description p {
+  display: none; }
 
 .product-info.container {
   padding-top: 30px; }
@@ -882,12 +884,12 @@ object {
     padding-left: 20px;
     padding-right: 20px; }
   .product-type-block-wrapper img {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px; }
 
 .product-type-block-wrapper:hover {
   border: 1px solid #d99054;
@@ -901,6 +903,15 @@ object {
   padding: 0 15px; }
   .stuff-button a {
     color: #fff; }
+
+.tax-product-type .taxonomy-description {
+  padding-bottom: 30px; }
+
+.tax-product-type .taxonomy-wrapper {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1220px;
+  border-top: 1px dashed #c8c8c8; }
 
 .front-container-content {
   display: -webkit-box;
@@ -928,7 +939,8 @@ object {
   display: flex;
   margin: 0 auto; }
   .journal-posts img {
-    height: 200px; }
+    max-height: 230px;
+    width: 100%; }
   .journal-posts h3 {
     color: #248A83;
     padding-bottom: 30px;
@@ -941,6 +953,8 @@ object {
   padding-left: 20px;
   width: 300px;
   height: 200px; }
+  .front-journal-posts-text button {
+    position: absolute; }
 
 .front-journal-posts {
   border: 1px solid #e1e1e1;
@@ -963,12 +977,12 @@ object {
 .latest-adventures-content {
   position: relative;
   display: grid;
+  margin: 0 auto;
   grid-template-columns: 25% 25% 25% 25%;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   width: 1120px;
-  height: 500px;
-  margin: 0 auto; }
+  height: 500px; }
   .latest-adventures-content .more-adventure-button {
     position: absolute;
     background-color: #248A83;
@@ -1033,7 +1047,7 @@ object {
   .mountain button {
     position: absolute;
     background-color: transparent;
-    bottom: 80px;
+    bottom: 60px;
     left: 40px;
     border: 1px solid #fff;
     color: #fff; }
@@ -1073,11 +1087,11 @@ object {
   width: 100vw; }
   .page-template .about-header-container h1 {
     position: absolute;
+    text-transform: uppercase;
     color: #fff;
     font-size: 48px;
     top: 39%;
-    left: 45%;
-    text-transform: uppercase; }
+    left: 45%; }
 
 .about-entry-content {
   margin: 0 auto;
@@ -1256,22 +1270,23 @@ body:not(.home):not(.about):not(.post-type-archive):not(.tax-product-type) .site
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 50px; }
+  padding-top: 25px; }
 
 .shop-stuff-header {
   text-transform: uppercase; }
 
 .shop-item-container ul {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
   list-style-type: none;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 25px;
   padding: 40px 230px 0; }
   .shop-item-container ul li {
     text-decoration: none;
-    width: 200px;
-    border: 1px solid #e1e1e1; }
+    width: 100%;
+    margin: 0 auto; }
   .shop-item-container ul img {
-    width: 200px;
+    max-width: 250px;
     height: 200px;
     padding-top: 20px; }
 
@@ -1279,10 +1294,10 @@ body:not(.home):not(.about):not(.post-type-archive):not(.tax-product-type) .site
   width: 200px; }
 
 .product {
-  width: 250px;
-  height: 250px;
   -o-object-fit: contain;
      object-fit: contain;
+  width: 250px;
+  height: 250px;
   border: 1px solid #e1e1e1; }
 
 .archive .product-type-blocks {
@@ -1325,16 +1340,19 @@ archive.product.entry-header {
   margin-bottom: 10rem; }
 
 .taxonomy-product-container {
-  position: relative; }
+  position: relative;
+  padding-right: 20px; }
+  .taxonomy-product-container img {
+    max-height: 200px; }
 
 .archive .entry-header img {
-  width: 100%;
   position: absolute;
+  position: relative;
+  width: 100%;
   width: 246px;
   height: 247px;
   -webkit-transform: translate(-50%, -52%);
           transform: translate(-50%, -52%);
-  position: relative;
   top: 130px;
   left: 124px; }
 
@@ -1342,7 +1360,10 @@ archive.product.entry-header {
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
   font-size: 16px;
-  margin-top: 0; }
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px; }
 
 body.archive.date .archive-month-header {
   -webkit-box-pack: left;
@@ -1364,9 +1385,9 @@ body.archive.date .content-area {
     width: auto;
     height: 520px; }
   body.archive.date .content-area img {
+    position: relative;
     width: 100%;
     height: 100%;
-    position: relative;
     top: 17rem;
     left: 23.5rem; }
 
@@ -1391,10 +1412,10 @@ body.archive.date .entry-title {
   left: 0px;
   top: 0px;
   width: 450px;
-  background-color: #248A83;
-  color: #fff;
+  padding: 15px;
   margin-top: 30px;
-  padding: 15px; }
+  background-color: #248A83;
+  color: #fff; }
 
 body.archive.date .entry-header {
   display: -webkit-box;
@@ -1422,6 +1443,9 @@ body.archive.date .entry-meta {
   bottom: 0px;
   left: 426px;
   padding: 10px; }
+
+body.page .entry-content {
+  margin: 5rem; }
 
 .single-product .site-content {
   margin: 0 auto;

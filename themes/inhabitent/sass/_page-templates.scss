@@ -10,14 +10,26 @@
   font-size: 40px;  
 }
 
+.hero {
+  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),
+  url(../../images/home-hero.jpg);  
+  display: flex;  
+  background-size: cover;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 40px; 
+}
+
 .front-center-logo-wrapper{
   display: flex;
   justify-content: center;
 }
 
 .front-center-logo {
-  position: relative;  
-  width: 500px;
+  position: absolute;  
+  width: 275px;
   height: 275px;
   bottom: 25%;
 }
@@ -27,8 +39,11 @@
 }
 
 // SHOP STUFF
+.post-type-archive .taxonomy-description p {
+  display: none;
+}
 .product-info.container {
-  padding-top: 300px;
+  padding-top: 30px;
 }
 .product-info h3 {
   display: flex;
@@ -85,6 +100,19 @@
   } 
 }
 
+//taxonomyprodyuct
+.tax-product-type {
+  .taxonomy-description{
+    padding-bottom: 30px;
+  }
+  .taxonomy-wrapper {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1220px;
+  border-top: $color__border-dashed;
+  }
+}
+
 // Journal Front Page
 
 .front-container-content {
@@ -104,7 +132,8 @@
   display: flex;
   margin: 0 auto;
   img {
-    height: 200px;
+    max-height: 230px;
+    width: 100%;
   }
   h3 {
     color: $color__brand-green;
@@ -121,6 +150,9 @@
   padding-left: 20px;
   width: 300px;
   height: 200px;
+  button {
+    position: absolute;
+  }
 }
 
 .front-journal-posts  {
@@ -227,7 +259,7 @@
   button {
     position: absolute;
     background-color: transparent;    
-    bottom: 80px;
+    bottom: 60px;
     left: 40px;
     border: $color__white-border;
     color: $color__background-body;
