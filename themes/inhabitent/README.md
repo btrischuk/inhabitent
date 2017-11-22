@@ -1,6 +1,6 @@
 # Inhabitent
 
-![Screen Shot Inhabitent](../images/screen-shot.png "Inhabitent")
+![Screen Shot Inhabitent](../images/screen-shot-inhabitent.png "Inhabitent")
 
 # Project-RED Starter
 A WordPress starter theme for RED Academy students, forked from Underscores.

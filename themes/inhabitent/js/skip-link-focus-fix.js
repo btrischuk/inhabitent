@@ -31,3 +31,25 @@
 		}, false);
 	}
 })();
+
+// (function($) {
+// 	$( '#search-bar' ).click(function(e)) {
+// 		e.preventDefault()
+// 		$( '#search-bar' )
+// 	}
+// })
+
+
+
+
+
+
+// (function($) {  
+// 	$('#search-bar' ).click(function(e) {
+// 		 e.preventDefault()
+// 		 $( '#search-field' ).toggle( 'slow', function() {
+// 			 $( '#search-field' ).focus();
+// 		 });
+// 		 $( '#search-field').blur();
+//  });
+// })(jQuery);

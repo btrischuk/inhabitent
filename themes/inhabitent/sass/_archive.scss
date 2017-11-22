@@ -80,6 +80,7 @@ archive.product.entry-header {
   padding-right: 20px;
   img {
     max-height: 200px;
+    height: -webkit-fill-available;
   }
 }
 
@@ -98,11 +99,11 @@ archive.product.entry-header {
   border: $color__border;
   border-top-width: 5px;
   font-size: 16px;
-  width: 100%;
+  width: 102%;
   margin: 0;  
-  padding: 0;
+  padding: 10px;
   padding-left: 20px;
-
+  font-weight: 100;
 }
 
 //category-by-month page
@@ -110,7 +111,8 @@ body.archive.date{
   .archive-month-header {
     justify-content: left;
     border-bottom: $color__border;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
+    margin: 0 8.5rem 0 1rem;
   }
   article .post {
     margin-left: 10rem;
@@ -124,6 +126,7 @@ body.archive.date{
     .entry-header {
       width: auto;
       height: 520px;
+      padding-top: 2rem;
     }
     img {
       position: relative;      
@@ -143,18 +146,23 @@ body.archive.date{
   }
 
   .entry-content p {
-    margin: 0 10rem 5rem 3rem;
+    margin: 0 10rem 5rem 11px;
   }
   
   .entry-title {
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: -38px;
+    top: 70px;
     width: 450px;
     padding: 15px;
     margin-top: 30px;    
     background-color: $color__brand-green;
     color: $color__background-body;
+    a {
+      font-size: 2.5rem;
+      color: white;
+      text-decoration: none;
+    }
   }
   
   .entry-header {
@@ -179,19 +187,41 @@ body.archive.date{
     position: absolute;
     background-color: $color__brand-green;
     color: $color__background-body;
-    bottom: 0px;
-    left: 426px;
+    bottom: -18px;
+    right: 38px;
     padding: 10px;
   }
 }
 
-// find us page
-
-body.page {
+//find us page
+.page-template-default {
   .entry-content {
-    margin: 5rem;
+    margin: 6rem 6rem 2rem 10rem;
+    width: 760px;
+  }
+  .widget-area {
+    width: 55vw;
+  }
+  h2{
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  }
+  .wpcf7-form-control-wrap input, .wpcf7-form-control {
+    background-color: $color__grey;
+    border: $color__border; 
+  }
+  .wpcf7-submit {
+    color: $color__link;
+    background-color: $color__brand-green;
+    border: 1px solid #e1e1e1;
+    border-radius: 0;
+    text-shadow: none;
+  }
+  .entry-title {
+    display: none;
   }
 }
+
 
 // body.page.find-us-content-area {
 //   background-color: blue;

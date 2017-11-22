@@ -1,0 +1,74 @@
+// SHOP STUFF
+.post-type-archive .taxonomy-description p {
+  display: none;
+}
+.product-info.container {
+  padding-top: 30px;
+}
+.product-info h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.product-type-blocks {
+  display: flex;
+  justify-content: center;
+}
+
+.product-type-blocks {
+  display: flex;
+  justify-content: space-evenly;
+  p {
+    font-family: $font__main;
+  }
+}
+
+.product-type-block-wrapper{
+  position: relative;  
+  width: 250px;
+  height: 300px;
+  border: $color__border;
+  border-top-width: 5px;
+  padding-top: 15px;
+  p {
+    display: flex;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  img {
+    display: flex;    
+    margin: 0 auto;    
+    width: 70px;
+    height: 70px;
+  }
+}
+.product-type-block-wrapper:hover {
+  border: $color__orange-border;
+  border-top-width: 5px;
+}
+
+.stuff-button  {
+  position: absolute;
+  background-color: $color__brand-green;
+  text-shadow: none;
+  left: 18%;
+  padding: 0 15px;
+  a {
+    color: $color__background-body;
+  } 
+}
+
+//taxonomyprodyuct
+.tax-product-type {
+  .taxonomy-description{
+    padding-bottom: 30px;
+  }
+  .taxonomy-wrapper {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 1220px;
+  border-top: $color__border-dashed;
+  }
+}
