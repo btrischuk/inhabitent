@@ -1,11 +1,13 @@
 .search-results { 
-  text-align: center;  
+  text-align: center; 
+ 
   
-  h2 {
+  h1, h2 {
     text-align: center;
+    text-transform: uppercase;
   }
-  .site-main .product {
-  width: 600px;
+  .site-main .product, article {
+  width: 800px;
   margin: 0 auto;
   
   }

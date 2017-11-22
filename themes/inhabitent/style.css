@@ -1524,8 +1524,9 @@ body.archive.date .entry-meta {
 
 .search-results {
   text-align: center; }
-  .search-results h2 {
-    text-align: center; }
-  .search-results .site-main .product {
-    width: 600px;
+  .search-results h1, .search-results h2 {
+    text-align: center;
+    text-transform: uppercase; }
+  .search-results .site-main .product, .search-results article {
+    width: 800px;
     margin: 0 auto; }
