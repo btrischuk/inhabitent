@@ -42,7 +42,7 @@ a {
 
 .journal-content-button {
 	position: relative;
-	margin: 0 36px;
+	margin: 0 0 5rem 48px;
 }
 
 .main-navigation a {
@@ -131,13 +131,23 @@ a {
 // 	}
 	}
 }	
-.search-bar {
-	padding: 13px 40px 0 0;
-}
-.fa-search {
-	color:$color__brand-green;
-}
 
+	.search-bar {
+		padding: 13px 40px 0 0;
+		display: flex;
+	}
+	.fa-search {
+		color:$color__brand-green;
+	}
+	.search-form{
+	.search-field {
+		border: none;
+		text-transform: uppercase;
+	}
+}
+button.search-submit {
+	border: none;
+}
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
