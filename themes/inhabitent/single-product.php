@@ -11,18 +11,18 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
     <?php while ( have_posts() ) : the_post(); ?>
-    <!-- <div class="testing"> -->
-
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+
+		<?php echo CFS() ->get (price) ?>
+
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<?php echo CFS() ->get (price) ?>
 
 
 		<div class="entry-meta">

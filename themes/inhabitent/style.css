@@ -1521,3 +1521,11 @@ body.archive.date .entry-meta {
   padding: 50px 0;
   width: 1220px;
   border-top: 1px dashed #c8c8c8; }
+
+.search-results {
+  text-align: center; }
+  .search-results h2 {
+    text-align: center; }
+  .search-results .site-main .product {
+    width: 600px;
+    margin: 0 auto; }
