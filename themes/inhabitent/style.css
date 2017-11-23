@@ -706,6 +706,8 @@ button.search-submit {
   border-left: 1px solid #e1e1e1; }
   .widget-area ul {
     padding: 0; }
+  .widget-area .widget_archive {
+    margin-right: 5rem; }
 
 .widget-area a {
   color: #248A83;
@@ -1623,11 +1625,19 @@ body.archive.date .entry-meta {
   width: 1220px;
   border-top: 1px dashed #c8c8c8; }
 
-.search-results {
-  text-align: center; }
-  .search-results h1, .search-results h2 {
-    text-align: center;
-    text-transform: uppercase; }
-  .search-results .site-main .product, .search-results article {
-    width: 800px;
-    margin: 0 auto; }
+.search-results .hfeed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.search-results .site-content {
+  width: 70%;
+  padding-left: 10rem; }
+
+.search-results h1, .search-results h2 {
+  text-align: center;
+  text-transform: uppercase; }
+
+.search-results .site-main .product, .search-results article {
+  width: 800px;
+  margin: 0 auto; }

@@ -1,5 +1,11 @@
 .search-results { 
-  text-align: center; 
+  .hfeed {
+    display: flex;
+  }
+  .site-content {
+    width: 70%;
+    padding-left: 10rem;
+  }
  
   
   h1, h2 {
