@@ -26,7 +26,7 @@ get_header(); ?>
 				<div class="journal-content-button">
 					<?php 
 					// echo get_the_permalink()
-					?> <button> read more </button>
+					?> <button class="read-more-button"> read more </button>
 				</div> 
 
 			<?php endwhile; ?>

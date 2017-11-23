@@ -6,16 +6,41 @@
     width: 70%;
     padding-left: 10rem;
   }
- 
   
   h1, h2 {
-    text-align: center;
     text-transform: uppercase;
+    color: $color__black;
+    font-family: $font__family-main;
+    border-bottom: $color__border;
+    letter-spacing: 2px;
+    font-size: 2rem;
   }
   .site-main .product, article {
   width: 800px;
   margin: 0 auto;
   
   }
-  
+  .entry-title {
+    border: none;
+  }
+
+  h2 a{
+    color: $color__brand-green;
+    font-family: $font__family-main;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+  }
+}
+
+.read-more-button {
+  text-shadow: none;   
+  border-radius: 0;
+  margin-bottom: 5rem;
+}
+
+.read-more-button:hover {
+  color: white;
 }

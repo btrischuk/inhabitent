@@ -560,7 +560,8 @@ a {
     .main-navigation ul a {
       display: block;
       text-decoration: none;
-      color: #248A83; }
+      color: #248A83;
+      font-family: Merriweather, sans-serif; }
 
 .search-bar {
   display: -webkit-box;
@@ -672,7 +673,7 @@ button.search-submit {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
+  margin: 0 0 1.5rem 2rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -702,7 +703,7 @@ button.search-submit {
       -ms-flex-align: center;
           align-items: center;
   width: 25%;
-  padding-top: 50px;
+  padding-top: 8rem;
   border-left: 1px solid #e1e1e1; }
   .widget-area ul {
     padding: 0; }
@@ -1635,9 +1636,33 @@ body.archive.date .entry-meta {
   padding-left: 10rem; }
 
 .search-results h1, .search-results h2 {
-  text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #000;
+  font-family: Novovento Sans Web;
+  border-bottom: 1px solid #e1e1e1;
+  letter-spacing: 2px;
+  font-size: 2rem; }
 
 .search-results .site-main .product, .search-results article {
   width: 800px;
   margin: 0 auto; }
+
+.search-results .entry-title {
+  border: none; }
+
+.search-results h2 a {
+  color: #248A83;
+  font-family: Novovento Sans Web;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 2px;
+  font-size: 2.5rem; }
+
+.read-more-button {
+  text-shadow: none;
+  border-radius: 0;
+  margin-bottom: 5rem; }
+
+.read-more-button:hover {
+  color: white; }
