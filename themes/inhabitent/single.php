@@ -16,7 +16,15 @@ get_header(); ?>
 					get_template_part( 'template-parts/content', 'single' ); 
 				?>
 
-			<?php the_post_navigation(); ?>
+ 		<p class="blog-product-social">
+      <button><a href="https://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i><span>Like</span></a></button>
+      <button><a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i><span>Tweet</span></a></button>
+      <button><a href="https://google-plus.com"><i class="fa fa-pinterest" aria-hidden="true"></i><span>Pin</span></a></button>
+    </p>
+
+
+
+			
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :

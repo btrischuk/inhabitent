@@ -44,7 +44,7 @@ body.blog {
      h2, a {
       color: white;
       border: none;
-      font-family: Novovento Sans Web;
+      font-family: Novovento Sans Web, sans sarif;
       font-size: 2.5rem;
       color: #fff;
       text-decoration: none;
@@ -67,3 +67,93 @@ body.blog {
     padding: 10px;
   }
 }
+
+.single.single-post {
+  @extend .blog;
+  @extend .entry-header;
+  .entry-meta .comments-link a {
+  font-size: 16px;
+  }
+  .blog-product-social  {
+    margin-left: 3rem;
+    span {
+      padding-left: 10px;
+    }
+    button {
+      a {
+        color: $color__black;
+        text-decoration: none; 
+      }
+    }
+    button :hover {
+      color: white;
+    }
+  }
+}
+.comment-author-avatar{
+  border-radius: 50%;
+  width: 4rem;  
+  height: 4rem;
+  margin-right: 1.5rem;
+  overflow: hidden;
+}
+
+.comments-title {
+  font-size: 2.1rem;
+}
+
+.comment-list {
+  list-style-type:none;
+  li {
+    margin: 3rem 5rem 0 3rem;
+    .comment-body{
+      display: flex;
+    }
+  }
+}
+
+.comment-form {
+  position: relative;
+  .comment-form-email {
+    position: absolute;
+    right: 10rem;
+    bottom: 7.5rem;
+  }
+}
+.comment-form-url {
+  input{
+  width: 94%;
+  }
+}
+
+.comment-content {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.reply a {
+  color:$color__brand-green;
+  text-decoration: none;
+}
+
+.entry-header h1{
+  font-family: $font__family-main;
+  font-size: 2.5rem;
+  border: none;
+}
+
+.entry-footer{
+  margin-left: 1rem;
+  background: none;
+  height: 2rem;
+  span{
+    margin-left: 2rem;  
+    a{
+    color: $color__brand-green;
+    // margin-right: 2rem;
+    }
+  }
+}
+
+// .p1{
+//   color: blue;
+// }
