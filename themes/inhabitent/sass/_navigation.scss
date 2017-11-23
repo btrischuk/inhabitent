@@ -143,10 +143,13 @@ a {
 	.search-field {
 		border: none;
 		text-transform: uppercase;
+		outline: none;
 	}
 }
 button.search-submit {
 	border: none;
+	background-color: transparent;
+	outline: none;
 }
 /* Small menu. */
 .menu-toggle,
