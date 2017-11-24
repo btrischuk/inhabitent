@@ -574,7 +574,11 @@ a {
 .search-form .search-field {
   border: none;
   text-transform: uppercase;
-  outline: none; }
+  outline: none;
+  color: #248A83;
+  padding: .5rem 0; }
+  .search-form .search-field .show {
+    padding: .5rem; }
 
 button.search-submit {
   border: none;
