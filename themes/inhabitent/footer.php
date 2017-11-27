@@ -33,7 +33,7 @@
 					</div>
 
 					<div class="footer-block-item">
-					<a href="http://localhost:3000/inhabitent/"><div class="footer-logo" title="logo">
+					<a href="<?php get_home_url ?>"><div class="footer-logo" title="logo">
 						</div></a>
 					</div>
 				</div>
