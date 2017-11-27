@@ -21,25 +21,22 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 			
-
-			<?php get_template_part( 'template-parts/content' ); ?>
-				<div class="journal-content-button">
-					<?php 
-					// echo get_the_permalink()
-					?> <button class="read-more-button"> read more </button>
-				</div> 
+				<?php get_template_part( 'template-parts/content' ); ?>
+					<div class="journal-content-button">
+						<a href = "<button class="read-more-button"> read more </button>
+					</div> 
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+				<?php the_posts_navigation(); ?>
 
 			<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
+			<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

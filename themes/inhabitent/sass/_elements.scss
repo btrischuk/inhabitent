@@ -28,13 +28,9 @@ blockquote, q {
 
 hr {
 	background-color: $color__background-hr;
+	margin-bottom: $base__space-unit;	
 	border: 0;
 	height: 1px;
-	margin-bottom: $base__space-unit;
-}
-
-ul, ol {
-	// margin: 0 0 $base__space-unit ($base__space-unit * 2);
 }
 
 ul {
@@ -65,7 +61,6 @@ img {
 }
 
 .front-page-thumbnail {
-	// width: auto;
 	width: 22rem;
 }
 
@@ -88,4 +83,3 @@ table {
 		min-height: 100vh;
 	}
 }
-

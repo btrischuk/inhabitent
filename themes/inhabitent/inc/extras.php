@@ -21,8 +21,6 @@ function inhabitent_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'inhabitent_body_classes' );
 
-
-
 function inhabitent_login_logo() { ?>
 	<style type="text/css">
 			#login h1 a {
@@ -42,15 +40,6 @@ function inhabitent_login_url() {
 }
 add_filter('login_headerurl', 'inhabitent_login_url');
 
-
-// add_filter( 'get_the_archive_title', function( $title ) {
-// 	if(is_tax('product-type')){
-// 			// $title = 'Hello';
-// 			return $title;
-// 	}
-// });
-
-
 /**
  * Modify the shop archive title
  */
@@ -63,32 +52,17 @@ function inhabitent_product_archive_title( $query ) {
 
 			return $title;
 		});
-		
 	}
 }
+
 //archive title
 add_action ('pre_get_posts', 'inhabitent_product_archive_title');
-
-
-
-
-
-//posts per page 
-// add_action ('pre_get_posts', 'inhabitent_product_archive_title');
-
-// function inhabitent_product_archive_title( $query ) {
-// 	if( $query ->is_main_query() && !is_admin() && is_post_type_archive( 'product')) {
-
-// 	}
-// }
-
 
 function inhabitent_logo_url_title(){
 	return 'inhabitent';
 }
 
 add_filter('login_headertitle','inhabitent_logo_url_title' );
-
 
 //about page
 function inhabitent_about_dynamic_css() {
@@ -112,41 +86,3 @@ function inhabitent_about_dynamic_css() {
 }
 
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_dynamic_css');
-
-//home page 
-// function inhabitent_front_page_dynamic_css() {
-// 	if ( ! is_page_template( 'front-page.php' ) ) {
-// 		return;
-// 	}
-
-// 	$image = CFS()->get( 'front_page_header_image' );
-
-// 	if ( ! $image ) {
-// 		return;
-// 	}
-
-// 	$hero_css = ".page-template-front-page .entry-header {
-// 		background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
-// 		url({$image}) no-repeat center bottom;
-// 		background-size: cover, cover;
-// 	}";
-
-// 	wp_add_inline_style( 'tent-style', $hero_css );
-
-
-// add_action( 'wp_enqueue_scripts', 'inhabitent_front_page_dynamic_css');
-// }
-
-
-// function my_login_logo(){
-
-// return home_url()
-
-// }
-
-
-//change wp logo and url
-// function (){
-// 	// <h1><a href="http://wordpress.org/" title="Powered by WordPress">inhabitent camping supply co.</a></h1>
-// }
-// add_actions();

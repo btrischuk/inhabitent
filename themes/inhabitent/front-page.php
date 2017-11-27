@@ -11,7 +11,6 @@ get_header(); ?>
   <div class="hero">
 		<img class="front-center-logo" src=<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ?>>;
 	</div>
-			
 
 	  <div id="primary" class="content-area">
     
@@ -48,7 +47,6 @@ get_header(); ?>
   <section class="journal-posts">
 
     <?php
-  
       $args = array( 'posts_per_page' => 3, 'order'=> 'ASC', 'orderby' => 'title' );
       $postslist = get_posts( $args );
     ?>
@@ -104,22 +102,22 @@ get_header(); ?>
 
 
 
-		<?php if ( have_posts() ) : ?>
+	<?php if ( have_posts() ) : ?>
 
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-      <?php endif; ?>
+		<?php if ( is_home() && ! is_front_page() ) : ?>
+    
+      <header>
+			  <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+		  </header>
+    <?php endif; ?>
 
 
 
-			<?php /* Start the Loop */ ?>
-      <?php while ( have_posts() ) : the_post(); ?>
+		<?php /* Start the Loop */ ?>
+    <?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content' ); ?>
-
-			<?php endwhile; ?>
+		  <?php get_template_part( 'template-parts/content' ); ?>
+		<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
 
@@ -133,7 +131,8 @@ get_header(); ?>
   </article>
   </main><!-- #main -->
 </div><!-- #primary -->
-  <?php get_footer(); ?>
+
+<?php get_footer(); ?>
 
 
 

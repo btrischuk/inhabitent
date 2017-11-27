@@ -12,7 +12,6 @@ body.blog {
       width: 100%;
     }
   }
-  
   .page-template-about .entry-header {
     display: flex;
     justify-content: center;
@@ -20,11 +19,9 @@ body.blog {
     width: 100vw;
     height: 100vh;
   }
-
   .entry-content p {
     margin: 0 10rem 1rem 3rem;
   }
-  
   .entry-title {
     position: absolute;
     left: 0px;
@@ -35,7 +32,6 @@ body.blog {
     margin-top: 30px;
     padding: 15px;
   }
-  
   .entry-header {
     display: flex;
     align-items: center;
@@ -50,14 +46,12 @@ body.blog {
       text-decoration: none;
     }
   }
-  
   .entry-header  {
     position: relative;
     height: auto;
     width: 640px;    
     margin: 10px 100px 10px 50px;
   }
-  
   .entry-meta {
     position: absolute;
     background-color: $color__brand-green;
@@ -90,6 +84,7 @@ body.blog {
     }
   }
 }
+
 .comment-author-avatar{
   border-radius: 50%;
   width: 4rem;  
@@ -120,6 +115,7 @@ body.blog {
     bottom: 7.5rem;
   }
 }
+
 .comment-form-url {
   input{
   width: 94%;
@@ -137,23 +133,18 @@ body.blog {
 
 .entry-header h1{
   font-family: $font__family-main;
-  font-size: 2.5rem;
   border: none;
+  font-size: 2.5rem;  
 }
 
 .entry-footer{
+  background: none;  
   margin-left: 1rem;
-  background: none;
   height: 2rem;
   span{
     margin-left: 2rem;  
     a{
     color: $color__brand-green;
-    // margin-right: 2rem;
     }
   }
 }
-
-// .p1{
-//   color: blue;
-// }

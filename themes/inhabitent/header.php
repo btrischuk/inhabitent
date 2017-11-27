@@ -28,7 +28,7 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="logo-container">
-						<a href="<?php get_home_url ?>"><div class="logo"></a>
+						<a href="<?php echo get_home_url(); ?>"><div class="logo"></a>
 						</div>
 
 					</div>

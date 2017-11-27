@@ -27,23 +27,16 @@ get_header(); ?>
     		<div class="product-type-blocks">
 
       		<?php foreach ( $terms as $term ) : ?>
-						<!-- <div class="product-link-container"> -->
-        		<p class="shop-product-link"><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> stuff</a></p>
-				<!-- </div> -->
+        		<p class="shop-product-link"><a href="<?php echo get_term_link( $term ); ?>" class="btn"><?php echo $term->name; ?> </a></p>
 			
       	<?php endforeach; ?>
 
      	  <?php endif; ?>
 
 				
-				<?php
-					// the_archive_title( '<h1 class="page-title">', '</h1>' );
-
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+				<?php the_archive_description( '<div class="taxonomy-description">', '</div>' );?>
 				
 			</header><!-- .page-header -->
-			
 
 			<?php /* Start the Loop */ ?>
 			
@@ -55,9 +48,9 @@ get_header(); ?>
 
 						<a href="<?php echo the_permalink()?>"><?php the_post_thumbnail('medium');?></a>
 
-							<?php 
-								the_title( sprintf( '<h2 class="entry-title">', esc_url( get_template_part( get_permalink()) ) ),'......', '</h2>' ) ;
-							?>
+						<?php 
+							the_title( sprintf( '<h2 class="entry-title">', esc_url( get_template_part( get_permalink()) ) ),'......', '</h2>' ) ;
+						?>
 
 							<?php echo CFS() ->get (price) ?>
 														
@@ -75,6 +68,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	
 
 <?php get_footer(); ?>

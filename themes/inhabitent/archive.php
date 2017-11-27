@@ -15,8 +15,7 @@ get_header(); ?>
 			    <h1 class="archive-month-header"><?php echo get_the_archive_title(); ?></h1>
 
             </header><!-- .page-header -->
-        
-            
+              
             <?php /* Start the Loop */ ?>
             <?php while ( have_posts() ) : the_post(); ?>
                 <?php
@@ -31,4 +30,4 @@ get_header(); ?>
         </main><!-- #main -->
 		</div><!-- #primary -->
 		<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+        <?php get_footer(); ?>

@@ -33,7 +33,7 @@
 					</div>
 
 					<div class="footer-block-item">
-					<a href="<?php get_home_url ?>"><div class="footer-logo" title="logo">
+					<a href="<?php echo get_home_url(); ?>"><div class="footer-logo" title="logo">
 						</div></a>
 					</div>
 				</div>
@@ -41,8 +41,6 @@
 				<div class="site-info">
 
 					<p> copyright &copy; 2017 inhabitent </p>
-
-						
 
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->

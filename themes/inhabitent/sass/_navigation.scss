@@ -93,15 +93,6 @@ a {
 				padding-left: 1.5rem;
 			}
 
-			// :hover > a,
-			// .focus > a {
-			// }
-
-		// 	a:hover,
-		// 	a.focus {
-		// 	}
-		// }
-
 		li:hover > ul,
 		li.focus > ul {
 			left: auto;
@@ -125,14 +116,8 @@ a {
 		color: $color__brand-green;
 		font-family: $font__main;
 	}
-
-// 	.current_page_item > a,
-// 	.current-menu-item > a,
-// 	.current_page_ancestor > a {
-// 	}
 	}
 }	
-
 
 	.search-bar {
 		display: flex;
@@ -152,11 +137,13 @@ a {
 		}
 	}
 }
+
 button.search-submit {
 	border: none;
 	background-color: transparent;
 	outline: none;
 }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -192,4 +179,3 @@ button.search-submit {
 		width: 50%;
 	}
 }
-
