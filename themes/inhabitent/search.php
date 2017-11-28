@@ -15,7 +15,7 @@ get_header(); ?>
 			<header class="page-header">
 				<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
-			<div class="testing">
+			<!-- <div class="testing"> -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -34,7 +34,9 @@ get_header(); ?>
 		
 			<div class="entry-content">
 				<?php the_excerpt(); ?>
-				<button class="read-more-button">read more</button>
+				<button class="read-more-button">
+					<a href = "<?php echo esc_url(get_permalink());?>">read more &rarr;</a>
+				</button>
 			</div><!-- .entry-content -->
 		</article><!-- #post-## -->
 

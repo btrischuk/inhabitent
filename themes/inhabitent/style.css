@@ -733,7 +733,10 @@ button.search-submit {
   padding-right: 1rem; }
 
 .widget {
-  margin: 0 0 1.5rem 1rem; }
+  margin: 0 0 1.5rem 0rem; }
+
+.tent-biz-hours-class {
+  margin-left: 3rem; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1248,7 +1251,8 @@ body.blog .entry-meta, body.single.single-post .entry-meta {
     color: #f4f4f4; }
 
 .journal-content-button {
-  width: 155px; }
+  width: 157px;
+  border-radius: 0; }
   .journal-content-button a {
     color: #000;
     text-decoration: none; }
@@ -1330,7 +1334,7 @@ body:not(.home):not(.about):not(.post-type-archive):not(.tax-product-type) .site
   list-style-type: none;
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 25px;
-  padding: 40px 230px 0; }
+  padding: 40px 230px 0 170px; }
   .shop-item-container ul li {
     text-decoration: none;
     width: 100%;
@@ -1411,7 +1415,7 @@ archive.product.entry-header, archive.product.single.single-post {
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
   font-size: 16px;
-  width: 100%;
+  width: 97%;
   margin: 0;
   padding: 10px;
   padding-left: 20px;
@@ -1695,6 +1699,9 @@ body.archive.date .entry-meta {
   text-shadow: none;
   border-radius: 0;
   margin-bottom: 5rem; }
+  .read-more-button a {
+    text-decoration: none;
+    color: #000; }
 
 .read-more-button:hover {
   color: white; }

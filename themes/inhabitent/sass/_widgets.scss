@@ -47,8 +47,9 @@
 }
 
 .textwidget span {
-  font-weight: bold;
+  	font-weight: bold;
 }
+
 
 .fa-phone:before, .fa-envelope:before, .fa-map-marker:before {
   color: black;
@@ -56,5 +57,8 @@
 }
 
 .widget {
-	margin: 0 0 1.5rem 1rem;
+	margin: 0 0 1.5rem 0rem;
+}
+.tent-biz-hours-class {
+	margin-left: 3rem;	
 }
