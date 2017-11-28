@@ -286,7 +286,7 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: Novovento Sans Web; }
+  font-family: Novovento Sans Web, sans-serif; }
 
 /* Copy */
 p {
@@ -483,7 +483,8 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #FFF; }
+  color: #FFF;
+  font-family: Novovento Sans Web, sans-serif; }
   a:visited {
     color: #808080; }
   a:hover, a:focus, a:active {
@@ -549,7 +550,9 @@ a {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px;
-        padding-left: 1.5rem; }
+        padding-left: 1.5rem;
+        font-weight: 100;
+        font-family: Novovento Sans Web, sans-serif; }
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
         left: auto; }
@@ -564,7 +567,8 @@ a {
       display: block;
       text-decoration: none;
       color: #248A83;
-      font-family: Merriweather, sans-serif; }
+      font-family: Novovento Sans Web, sans-serif;
+      font-weight: 100; }
 
 .search-bar {
   display: -webkit-box;
@@ -906,7 +910,9 @@ object {
   .journal-posts h3 {
     color: #248A83;
     padding-bottom: 30px;
-    padding-left: 10px; }
+    padding-left: 10px;
+    font-size: 1.4rem;
+    line-height: 1.25; }
   .journal-posts a {
     color: #000;
     text-decoration: none; }
@@ -916,7 +922,8 @@ object {
   width: 300px;
   height: 200px; }
   .front-journal-posts-text button {
-    position: absolute; }
+    position: absolute;
+    border-radius: 0; }
 
 .front-journal-posts {
   border: 1px solid #e1e1e1;
@@ -949,7 +956,8 @@ object {
     position: absolute;
     background-color: #248A83;
     color: #fff;
-    bottom: -75px; }
+    bottom: -75px;
+    border-radius: 0; }
     .latest-adventures-content .more-adventure-button :hover {
       background-color: #21759b; }
 
@@ -972,7 +980,8 @@ object {
     border: 1px solid #fff;
     color: #fff;
     bottom: 210px;
-    left: 30px; }
+    left: 30px;
+    border-radius: 0; }
 
 .beach {
   position: relative;
@@ -992,7 +1001,8 @@ object {
     border: 1px solid #fff;
     color: #fff;
     bottom: 30px;
-    left: 50px; }
+    left: 50px;
+    border-radius: 0; }
 
 .mountain {
   position: relative;
@@ -1012,7 +1022,8 @@ object {
     bottom: 60px;
     left: 40px;
     border: 1px solid #fff;
-    color: #fff; }
+    color: #fff;
+    border-radius: 0; }
 
 .gazing {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../../images/adventure-photos/night-sky.jpg) center no-repeat;
@@ -1033,7 +1044,8 @@ object {
     bottom: 80px;
     left: 40px;
     border: 1px solid #fff;
-    color: #fff; }
+    color: #fff;
+    border-radius: 0; }
 
 .page-template .about-header-container {
   position: relative;
@@ -1278,7 +1290,7 @@ body.blog .entry-meta, body.single.single-post .entry-meta {
   text-decoration: none; }
 
 .entry-header h1, .single.single-post h1 {
-  font-family: Novovento Sans Web;
+  font-family: Novovento Sans Web, sans-serif;
   border: none;
   font-size: 2.5rem; }
 
@@ -1399,7 +1411,7 @@ archive.product.entry-header, archive.product.single.single-post {
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
   font-size: 16px;
-  width: 102%;
+  width: 100%;
   margin: 0;
   padding: 10px;
   padding-left: 20px;
@@ -1634,7 +1646,8 @@ body.archive.date .entry-meta {
   left: 18%;
   padding: 0 15px; }
   .stuff-button a {
-    color: #fff; }
+    color: #fff;
+    text-decoration: none; }
 
 .tax-product-type .taxonomy-description {
   padding-bottom: 30px; }
@@ -1657,7 +1670,7 @@ body.archive.date .entry-meta {
 .search-results h1, .search-results h2 {
   text-transform: uppercase;
   color: #000;
-  font-family: Novovento Sans Web;
+  font-family: Novovento Sans Web, sans-serif;
   border-bottom: 1px solid #e1e1e1;
   letter-spacing: 2px;
   font-size: 2rem; }
@@ -1671,7 +1684,7 @@ body.archive.date .entry-meta {
 
 .search-results h2 a {
   color: #248A83;
-  font-family: Novovento Sans Web;
+  font-family: Novovento Sans Web, sans-serif;
   text-decoration: none;
   font-weight: bold;
   text-align: left;
