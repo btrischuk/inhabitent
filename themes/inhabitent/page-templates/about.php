@@ -18,6 +18,7 @@ get_header();?>
 
       <div class="about-container">
         <div class="about-entry-content">
+          
           <h2>Our Story</h2>
           <?php echo CFS()->get( 'about_our_story' ); ?>
 

@@ -91,14 +91,6 @@ function inhabitent_scripts() {
 
 	wp_enqueue_script( 'inhabitent-search', get_template_directory_uri() . '/build/js/search.min.js', array('jquery'),'', true );
 
-	// wp_enqueue_script( 'font-awesome', src)
-	// //if font awesome is a .css 
-
-	// function enqueue_our_required_stylesheets(){
-	// 	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
-	// }
-	// add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
-
 	//if font awesome is a .js cdn link
 	wp_enqueue_script( 'font-awesome-cdn', 'https://use.fontawesome.com/9420eb347a.js', array(), 4.7, true);
 

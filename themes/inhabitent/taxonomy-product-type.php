@@ -14,11 +14,6 @@ get_header(); ?>
 
 			<header class="page-header">
 			</header><!-- .page-header -->
-        <?php
-        
-					// the_archive_title( '<h1 class="page-title">', '</h1>' ); 
-
-					?>
 
 					<h1><?php single_term_title(); ?></h1>
 					<?php
@@ -34,22 +29,9 @@ get_header(); ?>
 
     		<div class="product-type-blocks">
 
-					<?php foreach ( $terms as $term ) : ?>
-					
-						<!-- <div class="product-link-container">
-						<p class="shop-product-link"><a href="<?php 
-						// echo get_term_link( $term ); 
-						?>" class="btn"><?php 
-						// echo $term->name; 
-						?> YAYYY</a></p>
-				</div> -->
-
-      	<?php endforeach; ?>
-
 				 <?php endif; ?>
-				 
 			
-	<div class="taxonomy-wrapper">
+		<div class="taxonomy-wrapper">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -65,7 +47,7 @@ get_header(); ?>
 			</div>
 
 			<?php endwhile; ?>
-</div>
+		</div>
 			<?php
 			 the_posts_navigation(); 
 			 ?>

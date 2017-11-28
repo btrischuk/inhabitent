@@ -106,7 +106,7 @@ archive.product.entry-header {
 }
 
 //category-by-month page
-body.archive.date{
+body.archive.date, .archive {
   .archive-month-header {
     justify-content: left;
     border-bottom: $color__border;
@@ -148,21 +148,7 @@ body.archive.date{
     margin: 0 10rem 5rem 11px;
   }
   
-  .entry-title {
-    position: absolute;
-    left: -38px;
-    top: 70px;
-    width: 450px;
-    padding: 15px;
-    margin-top: 30px;    
-    background-color: $color__brand-green;
-    color: $color__background-body;
-    a {
-      color: white;
-      text-decoration: none;
-      font-size: 2.5rem;      
-    }
-  }
+ 
   
   .entry-header {
     display: flex;
@@ -190,6 +176,25 @@ body.archive.date{
     right: 38px;
     padding: 10px;
   }
+}
+.archive.entry-title {
+  position: absolute;
+  left: -38px;
+  top: 70px;
+  width: 450px;
+  padding: 15px;
+  margin-top: 30px;    
+  background-color: $color__brand-green;
+  color: $color__background-body;
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.1rem;      
+    font-weight: 700;
+  }
+}
+.site-main h1.archive-month-header {
+  justify-content: flex-start;
 }
 
 //find us page

@@ -736,7 +736,7 @@ button.search-submit {
   margin: 0 0 1.5rem 0rem; }
 
 .tent-biz-hours-class {
-  margin-left: 3rem; }
+  margin-left: 0; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1219,7 +1219,8 @@ body.blog .entry-header, body.single.single-post .entry-header, body.blog .singl
     color: white;
     border: none;
     font-family: Novovento Sans Web, sans sarif;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
+    font-weight: 700;
     color: #fff;
     text-decoration: none; }
 
@@ -1296,7 +1297,8 @@ body.blog .entry-meta, body.single.single-post .entry-meta {
 .entry-header h1, .single.single-post h1 {
   font-family: Novovento Sans Web, sans-serif;
   border: none;
-  font-size: 2.5rem; }
+  font-size: 2.1rem;
+  font-weight: 700; }
 
 .entry-footer {
   background: none;
@@ -1421,7 +1423,7 @@ archive.product.entry-header, archive.product.single.single-post {
   padding-left: 20px;
   font-weight: 100; }
 
-body.archive.date .archive-month-header {
+body.archive.date .archive-month-header, .archive .archive-month-header {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
@@ -1429,27 +1431,27 @@ body.archive.date .archive-month-header {
   padding-bottom: 1rem;
   margin: 0 8.5rem 0 1rem; }
 
-body.archive.date article .post {
+body.archive.date article .post, .archive article .post {
   margin-left: 10rem; }
 
-body.archive.date .entry-title-about {
+body.archive.date .entry-title-about, .archive .entry-title-about {
   font-size: 48px;
   color: #fff; }
 
-body.archive.date .content-area {
+body.archive.date .content-area, .archive .content-area {
   margin-left: 7rem; }
-  body.archive.date .content-area .entry-header, body.archive.date .content-area .single.single-post {
+  body.archive.date .content-area .entry-header, body.archive.date .content-area .single.single-post, .archive .content-area .entry-header, .archive .content-area .single.single-post {
     width: auto;
     height: 520px;
     padding-top: 2rem; }
-  body.archive.date .content-area img {
+  body.archive.date .content-area img, .archive .content-area img {
     position: relative;
     width: 100%;
     height: 100%;
     top: 17rem;
     left: 23.5rem; }
 
-body.archive.date .page-template-about .entry-header, body.archive.date .page-template-about .single.single-post {
+body.archive.date .page-template-about .entry-header, body.archive.date .page-template-about .single.single-post, .archive .page-template-about .entry-header, .archive .page-template-about .single.single-post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1462,24 +1464,10 @@ body.archive.date .page-template-about .entry-header, body.archive.date .page-te
   width: 100vw;
   height: 100vh; }
 
-body.archive.date .entry-content p {
+body.archive.date .entry-content p, .archive .entry-content p {
   margin: 0 10rem 5rem 11px; }
 
-body.archive.date .entry-title {
-  position: absolute;
-  left: -38px;
-  top: 70px;
-  width: 450px;
-  padding: 15px;
-  margin-top: 30px;
-  background-color: #248A83;
-  color: #fff; }
-  body.archive.date .entry-title a {
-    color: white;
-    text-decoration: none;
-    font-size: 2.5rem; }
-
-body.archive.date .entry-header, body.archive.date .single.single-post {
+body.archive.date .entry-header, body.archive.date .single.single-post, .archive .entry-header, .archive .single.single-post {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1488,23 +1476,43 @@ body.archive.date .entry-header, body.archive.date .single.single-post {
           align-items: center;
   position: relative;
   align-items: center; }
-  body.archive.date .entry-header h2, body.archive.date .single.single-post h2 {
+  body.archive.date .entry-header h2, body.archive.date .single.single-post h2, .archive .entry-header h2, .archive .single.single-post h2 {
     color: white;
     border: none; }
 
-body.archive.date .entry-header, body.archive.date .single.single-post {
+body.archive.date .entry-header, body.archive.date .single.single-post, .archive .entry-header, .archive .single.single-post {
   position: relative;
   height: auto;
   width: 640px;
   margin: 10px 100px 10px 50px; }
 
-body.archive.date .entry-meta {
+body.archive.date .entry-meta, .archive .entry-meta {
   position: absolute;
   background-color: #248A83;
   color: #fff;
   bottom: -18px;
   right: 38px;
   padding: 10px; }
+
+.archive.entry-title {
+  position: absolute;
+  left: -38px;
+  top: 70px;
+  width: 450px;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #248A83;
+  color: #fff; }
+  .archive.entry-title a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.1rem;
+    font-weight: 700; }
+
+.site-main h1.archive-month-header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .page-template-default .entry-content {
   margin: 6rem 6rem 2rem 10rem;
