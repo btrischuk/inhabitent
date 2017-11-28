@@ -13,7 +13,7 @@ get_header(); ?>
     <?php while ( have_posts() ) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+		<header class="entry-header">
 		<div class="single-price">
 			<?php echo CFS() ->get (price) ?>
 		</div>
@@ -23,8 +23,6 @@ get_header(); ?>
 		<?php endif; ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-
 
 		<div class="entry-meta">
 			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
@@ -37,7 +35,7 @@ get_header(); ?>
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
 				'after'  => '</div>',
-			) );
+			));
 		?>
 	</div><!-- .entry-content -->
 

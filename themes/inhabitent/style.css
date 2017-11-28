@@ -401,6 +401,7 @@ table {
 --------------------------------------------------------------*/
 /* Buttons */
 button,
+.journal-content-button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -418,17 +419,21 @@ input[type="submit"] {
   bottom: .75rem;
   left: .75rem; }
   button:hover,
+  .journal-content-button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
   input[type="submit"]:hover {
     background-color: #248A83;
     border: none; }
     button:hover a,
+    .journal-content-button:hover a,
     input[type="button"]:hover a,
     input[type="reset"]:hover a,
     input[type="submit"]:hover a {
       color: #fff; }
   button:active, button:focus,
+  .journal-content-button:active,
+  .journal-content-button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
   input[type="reset"]:active,
@@ -1154,9 +1159,11 @@ body.blog .entry-title-about, body.single.single-post .entry-title-about {
 body.blog .content-area, body.single.single-post .content-area {
   margin-left: 7rem; }
   body.blog .content-area .entry-header, body.single.single-post .content-area .entry-header, body.blog .content-area .single.single-post, body.single.single-post .content-area .single.single-post {
-    width: 760px; }
-  body.blog .content-area img, body.single.single-post .content-area img {
-    width: 100%; }
+    width: 760px;
+    height: auto; }
+  body.blog .content-area img, body.single.single-post .content-area img, body.blog .content-area a, body.single.single-post .content-area a {
+    width: 760px;
+    height: 520px; }
 
 body.blog .page-template-about .entry-header, body.single.single-post .page-template-about .entry-header, body.blog .page-template-about .single.single-post, body.single.single-post .page-template-about .single.single-post {
   display: -webkit-box;
@@ -1212,7 +1219,7 @@ body.blog .entry-meta, body.single.single-post .entry-meta {
   background-color: #248A83;
   color: #fff;
   bottom: 0px;
-  left: 426px;
+  right: 0px;
   padding: 10px; }
 
 .single.single-post .entry-meta .comments-link a {
@@ -1226,7 +1233,13 @@ body.blog .entry-meta, body.single.single-post .entry-meta {
     color: #000;
     text-decoration: none; }
   .single.single-post .blog-product-social button :hover {
-    color: white; }
+    color: #f4f4f4; }
+
+.journal-content-button {
+  width: 155px; }
+  .journal-content-button a {
+    color: #000;
+    text-decoration: none; }
 
 .comment-author-avatar {
   border-radius: 50%;

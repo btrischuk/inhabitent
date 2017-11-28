@@ -7,9 +7,11 @@ body.blog {
     margin-left: 7rem;
     .entry-header {
       width: 760px;
+      height: auto;
     }
-    img {
-      width: 100%;
+    img, a {
+      width: 760px;
+      height: 520px;
     }
   }
   .page-template-about .entry-header {
@@ -57,7 +59,7 @@ body.blog {
     background-color: $color__brand-green;
     color: $color__background-body;
     bottom: 0px;
-    left: 426px;
+    right: 0px;
     padding: 10px;
   }
 }
@@ -80,9 +82,16 @@ body.blog {
       }
     }
     button :hover {
-      color: white;
+      color: $color__grey;
     }
   }
+}
+.journal-content-button {
+  width: 155px;
+  a {
+  color: $color__black;
+  text-decoration: none;
+  } 
 }
 
 .comment-author-avatar{

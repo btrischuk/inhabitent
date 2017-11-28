@@ -22,9 +22,9 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 			
 				<?php get_template_part( 'template-parts/content' ); ?>
-					<div class="journal-content-button">
-						<a href = "<button class="read-more-button"> read more </button>
-					</div> 
+					<button class="journal-content-button">				
+						<a href = "<?php echo esc_url(get_permalink());?>">read more &rarr;</a>
+					</button> 
 
 			<?php endwhile; ?>
 

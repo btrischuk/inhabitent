@@ -20,11 +20,8 @@ get_header(); ?>
       <button><a href="https://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i><span>Like</span></a></button>
       <button><a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i><span>Tweet</span></a></button>
       <button><a href="https://google-plus.com"><i class="fa fa-pinterest" aria-hidden="true"></i><span>Pin</span></a></button>
-    </p>
-
-
-
-			
+		</p>
+		
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
