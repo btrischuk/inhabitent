@@ -10,28 +10,21 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+			<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-			</header><!-- .page-header -->
+				<header class="page-header"></header><!-- .page-header -->
 
-					<h1><?php single_term_title(); ?></h1>
-					<?php
-
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
+				<h1><?php single_term_title(); ?></h1>
 				
-				<?php
-      		// $terms = get_terms( array(the_archive_title( before, after ) ) );
+				<?php the_archive_description( '<div class="taxonomy-description">', '</div>' );?>
 
-					if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :
-					?>
+				<?php if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) :?>
 
-    		<div class="product-type-blocks">
+    			<div class="product-type-blocks">
 
-				 <?php endif; ?>
+				<?php endif; ?>
 			
-		<div class="taxonomy-wrapper">
+				<div class="taxonomy-wrapper">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 

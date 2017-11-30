@@ -15,11 +15,9 @@ get_header(); ?>
 			<header class="page-header">
 				<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
-			<!-- <div class="testing"> -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
 
 				<?php 
 					the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
@@ -39,12 +37,6 @@ get_header(); ?>
 				</button>
 			</div><!-- .entry-content -->
 		</article><!-- #post-## -->
-
-
-
-
-
-
 
 			<?php endwhile; ?>
 
