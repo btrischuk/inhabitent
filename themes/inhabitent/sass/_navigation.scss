@@ -27,7 +27,6 @@ a {
 
 /* Menus */
 
-
 // Banner Menu
 
 .logo {
@@ -97,30 +96,30 @@ a {
 				
 			}
 
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
+			li:hover > ul,
+			li.focus > ul {
+				left: auto;
+			}
 		}
-	}
 
-	li {
-		float: left;
-		position: relative;
-		text-transform: uppercase;
+		li {
+			float: left;
+			position: relative;
+			text-transform: uppercase;
 
-		&:hover > a,
-		&.focus > a {
-			color: $color__brand-purple;
+			&:hover > a,
+			&.focus > a {
+				color: $color__brand-purple;
+			}
 		}
-	}
 
-	a {
-		display: block;
-		text-decoration: none;
-		color: $color__brand-green;
-		font-family: $font__family-main;
-		font-weight: 100;
-	}
+		a {
+			display: block;
+			text-decoration: none;
+			color: $color__brand-green;
+			font-family: $font__family-main;
+			font-weight: 100;
+		}
 	}
 }	
 

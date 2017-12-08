@@ -148,8 +148,6 @@ body.archive.date, .archive {
     margin: 0 10rem 5rem 11px;
   }
   
- 
-  
   .entry-header {
     display: flex;
     align-items: center;
@@ -177,6 +175,7 @@ body.archive.date, .archive {
     padding: 10px;
   }
 }
+
 .archive.entry-title {
   position: absolute;
   left: -38px;
@@ -193,6 +192,7 @@ body.archive.date, .archive {
     font-weight: 700;
   }
 }
+
 .site-main h1.archive-month-header {
   justify-content: flex-start;
 }

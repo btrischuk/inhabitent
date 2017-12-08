@@ -9,7 +9,7 @@ html {
 
 *,
 *:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*:after { 
 	box-sizing: inherit;
 }
 
@@ -56,8 +56,7 @@ dd {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	// width: 100%; /* Adhere to container width. */
+	height: auto;
 }
 
 .front-page-thumbnail {
